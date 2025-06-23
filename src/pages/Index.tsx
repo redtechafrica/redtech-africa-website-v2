@@ -1,17 +1,14 @@
 
 import React from 'react';
-import { ThemeProvider } from '@/contexts/ThemeContext';
-import { Navigation } from '@/components/Navigation';
-import AboutPage from '@/components/AboutPage';
+import HomePage from '@/components/HomePage';
+import { Footer } from '@/components/Footer';
 
 const Index = () => {
   return (
-    <ThemeProvider>
-      <div className="min-h-screen">
-        <Navigation />
-        <AboutPage />
-      </div>
-    </ThemeProvider>
+    <>
+      <HomePage />
+      <Footer />
+    </>
   );
 };
 
