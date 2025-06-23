@@ -1,8 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
 import { Plus, Minus, Code, Video, Zap, Globe, Shield, Cloud, Brain, Settings } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@/contexts/ThemeContext';
 
 export default function ServicesPage() {
@@ -10,7 +8,7 @@ export default function ServicesPage() {
   const [expandedMediaServices, setExpandedMediaServices] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState<Record<number, boolean>>({});
   const [activeTab, setActiveTab] = useState('tech');
-  const router = useRouter();
+  const navigate = useNavigate();
   const { isDark } = useTheme();
 
   const techServices = [
@@ -263,11 +261,10 @@ export default function ServicesPage() {
                         ? 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20' 
                         : 'bg-gradient-to-br from-blue-500/30 to-cyan-500/30'
                     }`}></div>
-                    <Image
+                    <img
                       src="https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F3.png?alt=media&token=7e750ac1-3b7b-40cd-a35f-f5adfb6a63cc"
                       alt="Technology Services"
-                      fill
-                      className="object-cover"
+                      className="w-full h-full object-cover"
                     />
                     {/* Floating Tech Elements */}
                     <div className="absolute top-8 right-8 w-16 h-16 border-2 border-blue-400/50 rounded-lg rotate-45 animate-spin z-20"></div>
@@ -423,11 +420,10 @@ export default function ServicesPage() {
                         ? 'bg-gradient-to-br from-pink-500/20 to-rose-500/20' 
                         : 'bg-gradient-to-br from-pink-500/30 to-rose-500/30'
                     }`}></div>
-                    <Image
+                    <img
                       src="https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2020.56.50.jpg?alt=media&token=750742b4-89df-4943-afe4-88fbc4993ba2"
                       alt="Media Services"
-                      fill
-                      className="object-cover object-left"
+                      className="w-full h-full object-cover object-left"
                     />
                     {/* Floating Media Elements */}
                     <div className="absolute top-8 left-8 w-14 h-14 border-2 border-pink-400/50 rounded-full animate-ping z-20"></div>
@@ -512,7 +508,7 @@ export default function ServicesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
-                onClick={() => router.push("/contact")}
+                onClick={() => navigate("/contact")}
                 className="px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-xl font-bold text-white hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Start Your Project

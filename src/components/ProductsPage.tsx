@@ -1,13 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@/contexts/ThemeContext';
 
 export default function ProductsPage() {
   const [activeProduct, setActiveProduct] = useState(0);
   const [isVisible, setIsVisible] = useState<Record<number, boolean>>({});
-  const router = useRouter();
+  const navigate = useNavigate();
   const { isDark } = useTheme();
 
   const products = [
@@ -269,11 +268,10 @@ export default function ProductsPage() {
                     <div className={`relative ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                       <div className="relative h-80 md:h-96 rounded-2xl overflow-hidden group-hover:shadow-2xl transition-all duration-500">
                         <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-2xl z-10"></div>
-                        <Image
+                        <img
                           src={product.image}
                           alt={product.title}
-                          fill
-                          className="object-cover rounded-2xl transition-all duration-500 group-hover:scale-110"
+                          className="w-full h-full object-cover rounded-2xl transition-all duration-500 group-hover:scale-110"
                         />
                         
                         {/* Floating Elements */}
@@ -309,7 +307,7 @@ export default function ProductsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
-                onClick={() => router.push("/contact")} 
+                onClick={() => navigate("/contact")} 
                 className={`px-8 py-4 border-2 rounded-xl font-bold transition-all duration-300 ${
                   isDark 
                     ? 'border-white/20 text-white hover:bg-white/10' 
