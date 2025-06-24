@@ -33,14 +33,14 @@ export function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? isDark
-            ? 'bg-gray-900/95 shadow-2xl shadow-purple-500/10'
-            : 'bg-white/95 shadow-2xl shadow-blue-500/10'
+            ? 'bg-gray-900/95 shadow-2xl shadow-amber-600/10'
+            : 'bg-white/95 shadow-2xl shadow-amber-600/10'
           : 'bg-transparent'
       } backdrop-blur-xl border-b ${
         scrolled
           ? isDark
-            ? 'border-purple-500/20'
-            : 'border-blue-500/20'
+            ? 'border-amber-600/20'
+            : 'border-amber-600/20'
           : 'border-transparent'
       }`}
     >
@@ -49,10 +49,12 @@ export function Navigation() {
           {/* Logo */}
           <a href="/" className="flex items-center gap-3 flex-shrink-0 group">
             <div className="relative">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-black text-lg">R</span>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+              <img 
+                src="https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fredtech_v2.png?alt=media&token=37749e94-dba2-4ba6-8e80-283b7d74bda2"
+                alt="REDtech Africa"
+                className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
+              />
+              <div className="absolute inset-0 bg-amber-600/20 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
             </div>
             <span className={`font-bold text-lg hidden sm:inline transition-colors duration-300 ${
               isDark ? 'text-white' : 'text-gray-900'
@@ -74,19 +76,19 @@ export function Navigation() {
                 }`}
               >
                 {link.label}
-                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
               </a>
             ))}
           </div>
 
           {/* Theme Toggle & Contact Button */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Fancy Theme Toggle */}
+            {/* Theme Toggle */}
             <button
               onClick={toggleTheme}
               className={`relative w-16 h-8 rounded-full transition-all duration-500 ${
                 isDark
-                  ? 'bg-gradient-to-r from-purple-600 to-blue-600'
+                  ? 'bg-gradient-to-r from-amber-700 to-amber-600'
                   : 'bg-gradient-to-r from-orange-400 to-yellow-400'
               } shadow-lg hover:shadow-xl`}
             >
@@ -96,7 +98,7 @@ export function Navigation() {
                 }`}
               >
                 {isDark ? (
-                  <Moon size={12} className="text-purple-600" />
+                  <Moon size={12} className="text-amber-700" />
                 ) : (
                   <Sun size={12} className="text-orange-500" />
                 )}
@@ -107,8 +109,8 @@ export function Navigation() {
             {/* Contact Button */}
             <Button className={`rounded-full px-6 font-semibold transition-all duration-300 ${
               isDark
-                ? 'bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:shadow-lg hover:shadow-purple-500/25 text-white'
-                : 'bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 hover:shadow-lg hover:shadow-blue-500/25 text-white'
+                ? 'bg-gradient-to-r from-amber-700 to-amber-600 hover:shadow-lg hover:shadow-amber-600/25 text-white'
+                : 'bg-gradient-to-r from-amber-700 to-amber-600 hover:shadow-lg hover:shadow-amber-600/25 text-white'
             } hover:scale-105`}>
               <a href="/contact">Contact Us</a>
             </Button>
@@ -121,12 +123,12 @@ export function Navigation() {
               onClick={toggleTheme}
               className={`w-10 h-10 rounded-xl transition-all duration-300 flex items-center justify-center ${
                 isDark
-                  ? 'bg-purple-500/20 hover:bg-purple-500/30'
+                  ? 'bg-amber-600/20 hover:bg-amber-600/30'
                   : 'bg-orange-500/20 hover:bg-orange-500/30'
               }`}
             >
               {isDark ? (
-                <Moon size={18} className="text-purple-400" />
+                <Moon size={18} className="text-amber-400" />
               ) : (
                 <Sun size={18} className="text-orange-500" />
               )}

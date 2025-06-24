@@ -135,15 +135,15 @@ export default function ContactPage() {
 
   return (
     <div className={`min-h-screen w-full transition-colors duration-300 ${
-      isDark ? 'bg-gray-900' : 'bg-gray-50'
+      isDark ? 'bg-gray-900' : 'bg-amber-50'
     }`}>
       {/* Animated background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute -top-40 -right-40 w-80 h-80 rounded-full opacity-20 animate-pulse ${
-          isDark ? 'bg-purple-500' : 'bg-blue-500'
+          isDark ? 'bg-amber-600' : 'bg-amber-600'
         }`}></div>
         <div className={`absolute -bottom-40 -left-40 w-80 h-80 rounded-full opacity-20 animate-pulse delay-1000 ${
-          isDark ? 'bg-blue-500' : 'bg-purple-500'
+          isDark ? 'bg-amber-700' : 'bg-amber-700'
         }`}></div>
       </div>
       
@@ -155,7 +155,7 @@ export default function ContactPage() {
         </h1>
 
         <div className={`p-6 sm:p-8 rounded-lg shadow-sm mb-12 transition-colors duration-300 ${
-          isDark ? 'bg-gray-800 shadow-purple-500/10' : 'bg-white shadow-blue-500/10'
+          isDark ? 'bg-gray-800 shadow-amber-600/10' : 'bg-white shadow-amber-600/10'
         }`}>
           <form ref={form} onSubmit={handleSubmit} className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
@@ -276,8 +276,8 @@ export default function ContactPage() {
               disabled={isSubmitting || !emailJSLoaded} 
               className={`w-32 transition-all duration-300 ${
                 isDark 
-                  ? 'border-purple-500 text-purple-400 hover:bg-purple-500/10' 
-                  : 'border-blue-500 text-blue-600 hover:bg-blue-500/10'
+                  ? 'border-amber-600 text-amber-400 hover:bg-amber-600/10' 
+                  : 'border-amber-600 text-amber-700 hover:bg-amber-600/10'
               }`}
             >
               {isSubmitting ? (
