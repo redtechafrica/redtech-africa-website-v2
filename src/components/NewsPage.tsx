@@ -1,8 +1,9 @@
 
 import React from 'react';
 import { useTheme } from '@/contexts/ThemeContext';
-import { Calendar, MapPin, ExternalLink, Award, Users, Globe } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, Award, Users, Globe, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 
 const NewsPage = () => {
   const { isDark } = useTheme();
@@ -47,20 +48,50 @@ const NewsPage = () => {
       source: "axios.com",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80",
       region: "US/China"
+    },
+    {
+      id: 6,
+      title: "Nigeria's Minister urges AI deployment to achieve $1 trn economy goal",
+      summary: "Dr Bosun Tijani, Minister of Communications & Digital Economy, emphasized using AI across sectors to help Nigeria hit its $1 trillion economy target by 2030. Deployments in healthcare, agriculture, finance, and governance were highlighted as critical paths forward.",
+      source: "guardian.ng",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+      region: "Nigeria/Africa"
+    },
+    {
+      id: 7,
+      title: "Equinix expands data-centre presence in Lagos",
+      summary: "Equinix, a global digital infrastructure leader, announced the expansion of its Lagos data-centre operations. This move aims to boost connectivity, digital services, and resilience within Nigeria's growing tech ecosystem.",
+      source: "businesspost.ng",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+      region: "Nigeria/Africa"
+    },
+    {
+      id: 8,
+      title: "Rolling Stone Africa names new Editor-in-Chief",
+      summary: "Rolling Stone Africa, launched in August 2024, has appointed Gwen Madiba as Editor-in-Chief (June 2025). With strong background in journalism and advocacy, she's set to steer the publication's editorial direction and growth across African music and media.",
+      source: "rollingstoneafrica.com",
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80",
+      region: "Africa"
     }
   ];
 
   const companyEvents = [
     {
       id: 1,
-      title: "DataFest Africa 2024 – Daystar Hall, Lagos",
-      date: "October 17–19, 2024",
-      venue: "Daystar Hall (Star Hub), Lagos",
-      description: "DataFest Africa, the continent's premier data science conference, returned to Daystar Hall (Star Hub), Lagos, bringing an eclectic mix of government officials, academia, start-ups, and private sector leaders.",
-      details: "REDtech Africa hosted an exhibition booth via the DiceyTech hackathon platform. Founders Adedapo Olawunmi and Dolamu Sowunmi, along with Executive Director Ayo Olokan and other team members, were on hand to engage attendees. They also oversaw the award ceremony for winners of the DiceyTech Hackathon, presenting cash prizes and celebrating standout talent. David Ogundepo of Nouvellesoft was present in full support, underscoring the collaborative spirit of the day.",
-      coverImage: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2020.01.28.jpeg?alt=media&token=5183b93a-2544-46e6-baf2-4c4448742c7a",
-      eventImage: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2F0BLK_5582.jpg?alt=media&token=67a32d95-8247-4bf2-aacc-82bc0af5ea51",
-      link: "https://www.datacommunityafrica.org/"
+      title: "AgriConnect Hackathon & Summit",
+      date: "May 28–30, 2025",
+      venue: "Oriental Hotel, Victoria Island, Lagos",
+      description: "The 2025 AgriConnect Summit brought together Africa's agricultural thought leaders — including former President Olusegun Obasanjo, Lagos Governor Babajide Sanwo-Olu, and AfDB President Akinwumi Adesina — to address food security and agripreneurship.",
+      details: "Hosted by the DiceyTech platform, the summit featured a two-day workshop (May 28–29) for agripreneurs and culminated in a high-energy AgriTech Hackathon on May 30. Founders of REDtech Africa served as guest speakers and led the award ceremony recognizing innovative hackathon winners.",
+      images: [
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.04.45.png?alt=media&token=326a2605-1f3d-4190-86c3-6035c3210189",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.48.53.png?alt=media&token=08f75024-a947-4cf4-a646-44364c38b80c",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.05.34.png?alt=media&token=159e6909-05df-459f-8e6c-507d6fc14c7d",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.05.49.png?alt=media&token=e4b16bf7-82bc-4519-9de2-146d1fdd834e",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.06.10.png?alt=media&token=737335f5-e3fc-46e7-82f8-196d32481a98",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.05.03.png?alt=media&token=9b85849a-d855-4c87-8449-0c0e06e01676"
+      ],
+      link: "https://agriconnectsummit.com"
     },
     {
       id: 2,
@@ -69,20 +100,32 @@ const NewsPage = () => {
       venue: "Muson Centre, Victoria Island, Lagos",
       description: "David Ogundepo, newly appointed Tech Innovation Lead at REDtech Africa since January 2025, was selected among the top 10 startups to pitch at the Startup World Cup Lagos Regional — part of a global series leading to a grand finale in San Francisco.",
       details: "Held at the Muson Centre, Victoria Island, Lagos and organized by Tech Unite Africa in partnership with Startup World Cup, the live event featured hundreds of guests, investors, and sponsors. David presented The Yearbook App product, showcasing its innovative approach to digital storytelling and community engagement. His participation symbolized REDtech's commitment to nurturing tech ventures with regional impact.",
-      coverImage: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG_8171.jpg?alt=media&token=3865fa96-5015-4e5d-9505-29a432b208bc",
-      eventImage: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FScreenshot_2025-06-24_at_19.36.40.png?alt=media&token=1894a68b-67c9-4af8-a88b-f8a026a552bf",
+      images: [
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG_8171.jpg?alt=media&token=3865fa96-5015-4e5d-9505-29a432b208bc",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FScreenshot_2025-06-24_at_19.36.40.png?alt=media&token=1894a68b-67c9-4af8-a88b-f8a026a552bf",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG_8163.jpg?alt=media&token=aa8b43a6-0bad-4a63-805b-249046dc6a6c",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG_6278.jpg?alt=media&token=38ffe06b-a3cd-45f6-ae95-28373e414fb7",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG-20250328-WA0015.jpg?alt=media&token=9c623987-0ff7-4ee9-93a5-94fde1bba051"
+      ],
       link: "https://www.startupworldcup.io/lagos-app-2025"
     },
     {
       id: 3,
-      title: "AgriConnect Hackathon & Summit",
-      date: "May 28–30, 2025",
-      venue: "Oriental Hotel, Victoria Island, Lagos",
-      description: "The 2025 AgriConnect Summit brought together Africa's agricultural thought leaders — including former President Olusegun Obasanjo, Lagos Governor Babajide Sanwo-Olu, and AfDB President Akinwumi Adesina — to address food security and agripreneurship.",
-      details: "Hosted by the DiceyTech platform, the summit featured a two-day workshop (May 28–29) for agripreneurs and culminated in a high-energy AgriTech Hackathon on May 30. Founders of REDtech Africa served as guest speakers and led the award ceremony recognizing innovative hackathon winners.",
-      coverImage: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.04.45.png?alt=media&token=326a2605-1f3d-4190-86c3-6035c3210189",
-      eventImage: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.48.53.png?alt=media&token=08f75024-a947-4cf4-a646-44364c38b80c",
-      link: "https://agriconnectsummit.com"
+      title: "DataFest Africa 2024 – Daystar Hall, Lagos",
+      date: "October 17–19, 2024",
+      venue: "Daystar Hall (Star Hub), Lagos",
+      description: "DataFest Africa, the continent's premier data science conference, returned to Daystar Hall (Star Hub), Lagos, bringing an eclectic mix of government officials, academia, start-ups, and private sector leaders.",
+      details: "REDtech Africa hosted an exhibition booth via the DiceyTech hackathon platform. Founders Adedapo Olawunmi and Dolamu Sowunmi, along with Executive Director Ayo Olokan and other team members, were on hand to engage attendees. They also oversaw the award ceremony for winners of the DiceyTech Hackathon, presenting cash prizes and celebrating standout talent. David Ogundepo of Nouvellesoft was present in full support, underscoring the collaborative spirit of the day.",
+      images: [
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2020.01.28.jpeg?alt=media&token=5183b93a-2544-46e6-baf2-4c4448742c7a",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2F0BLK_5582.jpg?alt=media&token=67a32d95-8247-4bf2-aacc-82bc0af5ea51",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FIMG_20241019_160501.jpg?alt=media&token=4bb4c8d6-151c-4cad-896f-a9372fffc36d",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FPhoto%20from%20D.jpg?alt=media&token=b63ca407-2cac-481d-87ea-07391987acef",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2016.29.11%20(2).jpeg?alt=media&token=8f3d8a52-cffa-4106-b186-47b98064831a",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2016.29.11%20(5).jpeg?alt=media&token=ce72c517-d907-4c71-8842-6c49f9457897",
+        "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2020.01.29.jpeg?alt=media&token=b53997b3-03ee-4ea8-b332-54df7caf2e72"
+      ],
+      link: "https://www.datacommunityafrica.org/"
     }
   ];
 
@@ -122,8 +165,105 @@ const NewsPage = () => {
       </section>
 
       <div className="container mx-auto px-4 pb-20">
-        {/* Global Tech News Section */}
+        {/* Company Events Section - Moved to top */}
         <section className="mb-20">
+          <div className="flex items-center gap-3 mb-12">
+            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
+              <Award className="w-6 h-6 text-white" />
+            </div>
+            <div>
+              <h2 className={`text-3xl md:text-4xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                REDtech Africa Events
+              </h2>
+              <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                Our journey in tech innovation and community building
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-16">
+            {companyEvents.map((event, index) => (
+              <div key={event.id} className={`relative ${
+                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+              } flex flex-col lg:flex gap-12 items-center`}>
+                {/* Event Images with Carousel */}
+                <div className="flex-1">
+                  <Carousel className="w-full">
+                    <CarouselContent>
+                      {event.images.map((image, imgIndex) => (
+                        <CarouselItem key={imgIndex}>
+                          <div className="relative overflow-hidden rounded-2xl group">
+                            <img 
+                              src={image} 
+                              alt={`${event.title} image ${imgIndex + 1}`}
+                              className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                            <div className="absolute bottom-6 left-6 right-6">
+                              <div className="flex items-center gap-4 text-white">
+                                <div className="flex items-center gap-2">
+                                  <Calendar className="w-4 h-4" />
+                                  <span className="text-sm font-medium">{event.date}</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                  <MapPin className="w-4 h-4" />
+                                  <span className="text-sm font-medium">{event.venue}</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </CarouselItem>
+                      ))}
+                    </CarouselContent>
+                    <CarouselPrevious className={`${isDark ? 'bg-gray-800 border-gray-700 text-white hover:bg-gray-700' : 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50'}`} />
+                    <CarouselNext className={`${isDark ? 'bg-gray-800 border-gray-700 text-white hover:bg-gray-700' : 'bg-white border-gray-200 text-gray-900 hover:bg-gray-50'}`} />
+                  </Carousel>
+                </div>
+
+                {/* Event Content */}
+                <div className="flex-1 space-y-6">
+                  <div>
+                    <h3 className={`text-3xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
+                      {event.title}
+                    </h3>
+                    <p className={`text-lg mb-6 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
+                      {event.description}
+                    </p>
+                    <p className={`text-base leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
+                      {event.details}
+                    </p>
+                  </div>
+
+                  <div className="flex items-center gap-4">
+                    <a 
+                      href={event.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
+                    >
+                      Learn More
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                    <div className="flex items-center gap-2 text-sm text-gray-500">
+                      <Users className="w-4 h-4" />
+                      <span>Community Event</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Decorative line */}
+                {index < companyEvents.length - 1 && (
+                  <div className={`absolute left-1/2 -bottom-8 w-px h-16 ${
+                    isDark ? 'bg-gray-700' : 'bg-gray-300'
+                  } hidden lg:block`} />
+                )}
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Global Tech News Section - Moved below events */}
+        <section>
           <div className="flex items-center gap-3 mb-12">
             <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl flex items-center justify-center">
               <Globe className="w-6 h-6 text-white" />
@@ -174,100 +314,6 @@ const NewsPage = () => {
                   </div>
                 </CardContent>
               </Card>
-            ))}
-          </div>
-        </section>
-
-        {/* Company Events Section */}
-        <section>
-          <div className="flex items-center gap-3 mb-12">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-              <Award className="w-6 h-6 text-white" />
-            </div>
-            <div>
-              <h2 className={`text-3xl md:text-4xl font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                REDtech Africa Events
-              </h2>
-              <p className={`text-lg ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                Our journey in tech innovation and community building
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-16">
-            {companyEvents.map((event, index) => (
-              <div key={event.id} className={`relative ${
-                index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              } flex flex-col lg:flex gap-12 items-center`}>
-                {/* Event Images */}
-                <div className="flex-1 space-y-6">
-                  <div className="relative overflow-hidden rounded-2xl group">
-                    <img 
-                      src={event.coverImage} 
-                      alt={`${event.title} cover`}
-                      className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                    <div className="absolute bottom-6 left-6 right-6">
-                      <div className="flex items-center gap-4 text-white">
-                        <div className="flex items-center gap-2">
-                          <Calendar className="w-4 h-4" />
-                          <span className="text-sm font-medium">{event.date}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <MapPin className="w-4 h-4" />
-                          <span className="text-sm font-medium">{event.venue}</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="relative overflow-hidden rounded-xl">
-                    <img 
-                      src={event.eventImage} 
-                      alt={`${event.title} event`}
-                      className="w-full h-48 object-cover hover:scale-105 transition-transform duration-500"
-                    />
-                  </div>
-                </div>
-
-                {/* Event Content */}
-                <div className="flex-1 space-y-6">
-                  <div>
-                    <h3 className={`text-3xl font-bold mb-4 ${isDark ? 'text-white' : 'text-gray-900'}`}>
-                      {event.title}
-                    </h3>
-                    <p className={`text-lg mb-6 ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>
-                      {event.description}
-                    </p>
-                    <p className={`text-base leading-relaxed ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                      {event.details}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <a 
-                      href={event.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-lg hover:shadow-lg hover:scale-105 transition-all duration-300"
-                    >
-                      Learn More
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                    <div className="flex items-center gap-2 text-sm text-gray-500">
-                      <Users className="w-4 h-4" />
-                      <span>Community Event</span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Decorative line */}
-                {index < companyEvents.length - 1 && (
-                  <div className={`absolute left-1/2 -bottom-8 w-px h-16 ${
-                    isDark ? 'bg-gray-700' : 'bg-gray-300'
-                  } hidden lg:block`} />
-                )}
-              </div>
             ))}
           </div>
         </section>
