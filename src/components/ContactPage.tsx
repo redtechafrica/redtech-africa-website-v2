@@ -40,7 +40,7 @@ export default function ContactPage() {
 
   // Load EmailJS dynamically
   React.useEffect(() => {
-    if (window.emailjs) {
+    if ((window as any).emailjs) {
       setEmailJSLoaded(true);
       return;
     }
@@ -50,7 +50,7 @@ export default function ContactPage() {
     script.async = true;
     
     script.onload = () => {
-      window.emailjs.init('UCiv2mzh9PWuZPf1X');
+      (window as any).emailjs.init('UCiv2mzh9PWuZPf1X');
       setEmailJSLoaded(true);
     };
     
@@ -94,7 +94,7 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      const result = await window.emailjs.sendForm(
+      const result = await (window as any).emailjs.sendForm(
         'service_ybmsmpf',
         'template_ocysv8r',
         form.current,
