@@ -30,12 +30,6 @@ export default function AboutPage() {
       icon: Users,
       color: isDark ? 'from-amber-600 to-yellow-600' : 'from-amber-700 to-yellow-700'
     },
-    {
-      title: 'Impact',
-      description: 'We create solutions that make a real difference, transforming businesses and empowering communities across Africa and beyond.',
-      icon: Heart,
-      color: isDark ? 'from-amber-600 to-yellow-600' : 'from-amber-700 to-yellow-700'
-    }
   ];
 
   useEffect(() => {
