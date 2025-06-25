@@ -16,25 +16,25 @@ export default function AboutPage() {
       title: 'Innovation',
       description: 'We push the boundaries of what\'s possible, constantly exploring new technologies and creative approaches to solve complex challenges.',
       icon: Rocket,
-      color: isDark ? 'from-blue-500 to-cyan-500' : 'from-blue-600 to-cyan-600'
+      color: isDark ? 'from-amber-600 to-yellow-600' : 'from-amber-700 to-yellow-700'
     },
     {
       title: 'Excellence',
       description: 'We deliver nothing but the highest quality solutions, ensuring every project exceeds expectations and sets new industry standards.',
       icon: Award,
-      color: isDark ? 'from-purple-500 to-violet-500' : 'from-purple-600 to-violet-600'
+      color: isDark ? 'from-amber-600 to-yellow-600' : 'from-amber-700 to-yellow-700'
     },
     {
       title: 'Collaboration',
       description: 'We believe in the power of partnership, working closely with our clients to understand their vision and bring it to life.',
       icon: Users,
-      color: isDark ? 'from-green-500 to-emerald-500' : 'from-green-600 to-emerald-600'
+      color: isDark ? 'from-amber-600 to-yellow-600' : 'from-amber-700 to-yellow-700'
     },
     {
       title: 'Impact',
       description: 'We create solutions that make a real difference, transforming businesses and empowering communities across Africa and beyond.',
       icon: Heart,
-      color: isDark ? 'from-red-500 to-pink-500' : 'from-red-600 to-pink-600'
+      color: isDark ? 'from-amber-600 to-yellow-600' : 'from-amber-700 to-yellow-700'
     }
   ];
 
@@ -91,7 +91,7 @@ export default function AboutPage() {
 
   const backgroundClass = isDark
     ? 'min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white'
-    : 'min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 text-gray-900';
+    : 'min-h-screen bg-gradient-to-br from-amber-50 via-white to-yellow-50 text-gray-900';
 
   return (
     <div className={`${backgroundClass} overflow-hidden transition-all duration-500`}>
@@ -99,22 +99,22 @@ export default function AboutPage() {
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         {isDark ? (
           <>
-            <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-red-500/10 to-orange-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/3 left-1/2 w-72 h-72 bg-gradient-to-br from-green-500/10 to-teal-500/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
+            <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-amber-500/10 to-yellow-500/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-amber-600/10 to-yellow-600/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/3 left-1/2 w-72 h-72 bg-gradient-to-br from-amber-400/10 to-yellow-400/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
           </>
         ) : (
           <>
-            <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-blue-200/30 to-purple-200/30 rounded-full blur-3xl animate-pulse"></div>
-            <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-orange-200/30 to-pink-200/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
-            <div className="absolute top-1/3 left-1/2 w-72 h-72 bg-gradient-to-br from-green-200/30 to-teal-200/30 rounded-full blur-3xl animate-pulse delay-2000"></div>
+            <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-br from-amber-200/30 to-yellow-200/30 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-br from-amber-300/30 to-yellow-300/30 rounded-full blur-3xl animate-pulse delay-1000"></div>
+            <div className="absolute top-1/3 left-1/2 w-72 h-72 bg-gradient-to-br from-amber-200/30 to-yellow-200/30 rounded-full blur-3xl animate-pulse delay-2000"></div>
           </>
         )}
         
         {/* Floating Tech Elements */}
-        <div className={`absolute top-32 left-32 w-4 h-4 ${isDark ? 'bg-blue-400/30' : 'bg-blue-500/40'} rounded-full animate-ping delay-500`}></div>
-        <div className={`absolute top-64 right-64 w-6 h-6 border-2 ${isDark ? 'border-purple-400/30' : 'border-purple-500/40'} rounded-lg rotate-45 animate-spin`}></div>
-        <div className={`absolute bottom-32 right-32 w-8 h-8 ${isDark ? 'bg-gradient-to-r from-cyan-500/20 to-blue-500/20' : 'bg-gradient-to-r from-cyan-400/30 to-blue-400/30'} rounded-full animate-pulse delay-1500`}></div>
+        <div className={`absolute top-32 left-32 w-4 h-4 ${isDark ? 'bg-amber-400/30' : 'bg-amber-500/40'} rounded-full animate-ping delay-500`}></div>
+        <div className={`absolute top-64 right-64 w-6 h-6 border-2 ${isDark ? 'border-amber-400/30' : 'border-amber-500/40'} rounded-lg rotate-45 animate-spin`}></div>
+        <div className={`absolute bottom-32 right-32 w-8 h-8 ${isDark ? 'bg-gradient-to-r from-amber-500/20 to-yellow-500/20' : 'bg-gradient-to-r from-amber-400/30 to-yellow-400/30'} rounded-full animate-pulse delay-1500`}></div>
       </div>
 
       {/* Hero Section */}
@@ -126,15 +126,10 @@ export default function AboutPage() {
               isVisible[0] ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}
           >
-            <div className="inline-block mb-8">
-              <span className={`px-6 py-3 bg-gradient-to-r ${isDark ? 'from-blue-500 via-purple-500 to-pink-500' : 'from-blue-600 via-purple-600 to-pink-600'} rounded-full text-lg font-bold text-white shadow-2xl`}>
-                Technology • Media • Innovation
-              </span>
-            </div>
             <h1 className={`text-7xl md:text-9xl font-black mb-8 leading-tight ${
               isDark 
-                ? 'bg-gradient-to-r from-white via-blue-200 to-purple-300 bg-clip-text text-transparent'
-                : 'bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 bg-clip-text text-transparent'
+                ? 'bg-gradient-to-r from-white via-amber-200 to-yellow-300 bg-clip-text text-transparent'
+                : 'bg-gradient-to-r from-gray-900 via-amber-600 to-yellow-600 bg-clip-text text-transparent'
             }`}>
               Who We Are
             </h1>
@@ -147,14 +142,14 @@ export default function AboutPage() {
             
             {/* Animated DNA Helix */}
             <div className="flex justify-center items-center space-x-8 mt-16">
-              <div className={`w-24 h-24 rounded-full ${isDark ? 'bg-gradient-to-br from-blue-500/20 to-cyan-500/40' : 'bg-gradient-to-br from-blue-400/30 to-cyan-400/50'} flex items-center justify-center animate-pulse`}>
-                <Code size={32} className={isDark ? 'text-blue-400' : 'text-blue-600'} />
+              <div className={`w-24 h-24 rounded-full ${isDark ? 'bg-gradient-to-br from-amber-500/20 to-yellow-500/40' : 'bg-gradient-to-br from-amber-400/30 to-yellow-400/50'} flex items-center justify-center animate-pulse`}>
+                <Code size={32} className={isDark ? 'text-amber-400' : 'text-amber-600'} />
               </div>
-              <div className={`w-32 h-32 rounded-full ${isDark ? 'bg-gradient-to-br from-purple-500/20 to-pink-500/40' : 'bg-gradient-to-br from-purple-400/30 to-pink-400/50'} flex items-center justify-center animate-pulse delay-500`}>
-                <Brain size={40} className={isDark ? 'text-purple-400' : 'text-purple-600'} />
+              <div className={`w-32 h-32 rounded-full ${isDark ? 'bg-gradient-to-br from-amber-600/20 to-yellow-600/40' : 'bg-gradient-to-br from-amber-500/30 to-yellow-500/50'} flex items-center justify-center animate-pulse delay-500`}>
+                <Brain size={40} className={isDark ? 'text-amber-400' : 'text-amber-600'} />
               </div>
-              <div className={`w-24 h-24 rounded-full ${isDark ? 'bg-gradient-to-br from-green-500/20 to-emerald-500/40' : 'bg-gradient-to-br from-green-400/30 to-emerald-400/50'} flex items-center justify-center animate-pulse delay-1000`}>
-                <Video size={32} className={isDark ? 'text-green-400' : 'text-green-600'} />
+              <div className={`w-24 h-24 rounded-full ${isDark ? 'bg-gradient-to-br from-amber-500/20 to-yellow-500/40' : 'bg-gradient-to-br from-amber-400/30 to-yellow-400/50'} flex items-center justify-center animate-pulse delay-1000`}>
+                <Video size={32} className={isDark ? 'text-amber-400' : 'text-amber-600'} />
               </div>
             </div>
           </div>
@@ -171,15 +166,15 @@ export default function AboutPage() {
             }`}
           >
             {/* Mission */}
-            <div className={`${isDark ? 'bg-gradient-to-br from-blue-500/10 to-purple-500/10 border-blue-500/20 hover:border-blue-400/40' : 'bg-gradient-to-br from-blue-100/50 to-purple-100/50 border-blue-300/30 hover:border-blue-400/50'} backdrop-blur-sm rounded-3xl p-8 border transition-all duration-500 group`}>
+            <div className={`${isDark ? 'bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border-amber-500/20 hover:border-amber-400/40' : 'bg-gradient-to-br from-amber-100/50 to-yellow-100/50 border-amber-300/30 hover:border-amber-400/50'} backdrop-blur-sm rounded-3xl p-8 border transition-all duration-500 group`}>
               <div className="flex items-center mb-6">
-                <div className={`w-16 h-16 bg-gradient-to-r ${isDark ? 'from-blue-500 to-purple-600' : 'from-blue-600 to-purple-700'} rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-600' : 'from-amber-600 to-yellow-700'} rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300`}>
                   <Target size={28} className="text-white" />
                 </div>
                 <h2 className={`text-4xl font-black ${isDark ? 'text-white' : 'text-gray-900'}`}>Our Mission</h2>
               </div>
               <div className="space-y-4">
-                <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-blue-500 to-purple-600' : 'from-blue-600 to-purple-700'} rounded-full`}></div>
+                <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-600' : 'from-amber-600 to-yellow-700'} rounded-full`}></div>
                 <p className={`text-lg leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                   To revolutionize the African technology and media landscape by delivering cutting-edge solutions 
                   that empower businesses, amplify voices, and drive digital transformation. We bridge the gap 
@@ -190,15 +185,15 @@ export default function AboutPage() {
             </div>
 
             {/* Vision */}
-            <div className={`${isDark ? 'bg-gradient-to-br from-pink-500/10 to-red-500/10 border-pink-500/20 hover:border-pink-400/40' : 'bg-gradient-to-br from-pink-100/50 to-red-100/50 border-pink-300/30 hover:border-pink-400/50'} backdrop-blur-sm rounded-3xl p-8 border transition-all duration-500 group`}>
+            <div className={`${isDark ? 'bg-gradient-to-br from-amber-500/10 to-yellow-500/10 border-amber-500/20 hover:border-amber-400/40' : 'bg-gradient-to-br from-amber-100/50 to-yellow-100/50 border-amber-300/30 hover:border-amber-400/50'} backdrop-blur-sm rounded-3xl p-8 border transition-all duration-500 group`}>
               <div className="flex items-center mb-6">
-                <div className={`w-16 h-16 bg-gradient-to-r ${isDark ? 'from-pink-500 to-red-600' : 'from-pink-600 to-red-700'} rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300`}>
+                <div className={`w-16 h-16 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-600' : 'from-amber-600 to-yellow-700'} rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300`}>
                   <Rocket size={28} className="text-white" />
                 </div>
                 <h2 className={`text-4xl font-black ${isDark ? 'text-white' : 'text-gray-900'}`}>Our Vision</h2>
               </div>
               <div className="space-y-4">
-                <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-pink-500 to-red-600' : 'from-pink-600 to-red-700'} rounded-full`}></div>
+                <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-600' : 'from-amber-600 to-yellow-700'} rounded-full`}></div>
                 <p className={`text-lg leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                   To be Africa's leading technology and media consulting firm, recognized globally for our innovation, 
                   creativity, and transformative impact. We envision a future where African businesses lead the 
@@ -224,21 +219,21 @@ export default function AboutPage() {
               <h2 className={`text-5xl font-black mb-8 ${isDark ? 'text-white' : 'text-gray-900'}`}>Our Business</h2>
               <div className="grid md:grid-cols-3 gap-8 mb-12">
                 <div className="text-center">
-                  <div className={`w-20 h-20 bg-gradient-to-r ${isDark ? 'from-blue-500 to-cyan-500' : 'from-blue-600 to-cyan-600'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
+                  <div className={`w-20 h-20 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-500' : 'from-amber-600 to-yellow-600'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
                     <Code size={32} className="text-white" />
                   </div>
                   <h3 className={`text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>Technology Solutions</h3>
                   <p className={isDark ? 'text-gray-400' : 'text-gray-600'}>Custom software, mobile apps, and enterprise systems</p>
                 </div>
                 <div className="text-center">
-                  <div className={`w-20 h-20 bg-gradient-to-r ${isDark ? 'from-purple-500 to-pink-500' : 'from-purple-600 to-pink-600'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
+                  <div className={`w-20 h-20 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-500' : 'from-amber-600 to-yellow-600'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
                     <Video size={32} className="text-white" />
                   </div>
                   <h3 className={`text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>Creative Media</h3>
                   <p className={isDark ? 'text-gray-400' : 'text-gray-600'}>Content production, digital marketing, and brand strategy</p>
                 </div>
                 <div className="text-center">
-                  <div className={`w-20 h-20 bg-gradient-to-r ${isDark ? 'from-green-500 to-emerald-500' : 'from-green-600 to-emerald-600'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
+                  <div className={`w-20 h-20 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-500' : 'from-amber-600 to-yellow-600'} rounded-2xl flex items-center justify-center mx-auto mb-4`}>
                     <Brain size={32} className="text-white" />
                   </div>
                   <h3 className={`text-xl font-bold mb-2 ${isDark ? 'text-white' : 'text-gray-900'}`}>AI Integration</h3>
@@ -252,7 +247,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className={`${isDark ? 'bg-gradient-to-r from-teal-500/10 to-green-500/10 border-teal-500/20' : 'bg-gradient-to-r from-teal-100/50 to-green-100/50 border-teal-300/30'} backdrop-blur-sm rounded-3xl p-12 border`}>
+            <div className={`${isDark ? 'bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border-amber-500/20' : 'bg-gradient-to-r from-amber-100/50 to-yellow-100/50 border-amber-300/30'} backdrop-blur-sm rounded-3xl p-12 border`}>
               <h2 className={`text-5xl font-black mb-8 ${isDark ? 'text-white' : 'text-gray-900'}`}>Global Presence</h2>
               <p className={`text-xl leading-relaxed max-w-4xl mx-auto mb-8 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 With our headquarters rooted in Africa and partnerships spanning across continents, we bring local 
@@ -262,25 +257,25 @@ export default function AboutPage() {
               </p>
               <div className="grid md:grid-cols-4 gap-6">
                 <div className={`${isDark ? 'bg-gray-800/30' : 'bg-white/50'} rounded-xl p-4 text-center`}>
-                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-teal-400' : 'text-teal-600'}`} />
+                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-amber-400' : 'text-amber-600'}`} />
                   <span className={`font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>Africa</span>
                 </div>
                 <div className={`${isDark ? 'bg-gray-800/30' : 'bg-white/50'} rounded-xl p-4 text-center`}>
-                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-blue-400' : 'text-blue-600'}`} />
+                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-amber-400' : 'text-amber-600'}`} />
                   <span className={`font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>Europe</span>
                 </div>
                 <div className={`${isDark ? 'bg-gray-800/30' : 'bg-white/50'} rounded-xl p-4 text-center`}>
-                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-purple-400' : 'text-purple-600'}`} />
+                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-amber-400' : 'text-amber-600'}`} />
                   <span className={`font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>Americas</span>
                 </div>
                 <div className={`${isDark ? 'bg-gray-800/30' : 'bg-white/50'} rounded-xl p-4 text-center`}>
-                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-pink-400' : 'text-pink-600'}`} />
+                  <Globe size={24} className={`mx-auto mb-2 ${isDark ? 'text-amber-400' : 'text-amber-600'}`} />
                   <span className={`font-bold ${isDark ? 'text-white' : 'text-gray-900'}`}>Asia</span>
                 </div>
               </div>
             </div>
 
-            <div className={`${isDark ? 'bg-gradient-to-r from-orange-500/10 to-red-500/10 border-orange-500/20' : 'bg-gradient-to-r from-orange-100/50 to-red-100/50 border-orange-300/30'} backdrop-blur-sm rounded-3xl p-12 border`}>
+            <div className={`${isDark ? 'bg-gradient-to-r from-amber-500/10 to-yellow-500/10 border-amber-500/20' : 'bg-gradient-to-r from-amber-100/50 to-yellow-100/50 border-amber-300/30'} backdrop-blur-sm rounded-3xl p-12 border`}>
               <h2 className={`text-5xl font-black mb-8 ${isDark ? 'text-white' : 'text-gray-900'}`}>Our History</h2>
               <p className={`text-xl leading-relaxed max-w-4xl mx-auto ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                 Founded with a vision to democratize technology and amplify African creativity, REDtech Africa 
@@ -302,28 +297,28 @@ export default function AboutPage() {
               isVisible[3] ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}
           >
-            <div className={`${isDark ? 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border-blue-500/30' : 'bg-gradient-to-br from-blue-200/40 to-cyan-200/40 border-blue-400/40'} backdrop-blur-sm rounded-3xl p-8 border text-center group hover:scale-105 transition-transform duration-300`}>
-              <div className={`text-6xl font-black mb-4 ${isDark ? 'bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent' : 'bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent'}`}>
+            <div className={`${isDark ? 'bg-gradient-to-br from-amber-500/20 to-yellow-500/20 border-amber-500/30' : 'bg-gradient-to-br from-amber-200/40 to-yellow-200/40 border-amber-400/40'} backdrop-blur-sm rounded-3xl p-8 border text-center group hover:scale-105 transition-transform duration-300`}>
+              <div className={`text-6xl font-black mb-4 ${isDark ? 'bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent' : 'bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent'}`}>
                 {counter1}+
               </div>
               <div className={`font-bold text-lg ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>Years of Digital Excellence</div>
-              <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-blue-500 to-cyan-500' : 'from-blue-600 to-cyan-600'} rounded-full mt-4 group-hover:scale-x-110 transition-transform duration-300`}></div>
+              <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-500' : 'from-amber-600 to-yellow-600'} rounded-full mt-4 group-hover:scale-x-110 transition-transform duration-300`}></div>
             </div>
             
-            <div className={`${isDark ? 'bg-gradient-to-br from-purple-500/20 to-pink-500/20 border-purple-500/30' : 'bg-gradient-to-br from-purple-200/40 to-pink-200/40 border-purple-400/40'} backdrop-blur-sm rounded-3xl p-8 border text-center group hover:scale-105 transition-transform duration-300`}>
-              <div className={`text-6xl font-black mb-4 ${isDark ? 'bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent' : 'bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent'}`}>
+            <div className={`${isDark ? 'bg-gradient-to-br from-amber-500/20 to-yellow-500/20 border-amber-500/30' : 'bg-gradient-to-br from-amber-200/40 to-yellow-200/40 border-amber-400/40'} backdrop-blur-sm rounded-3xl p-8 border text-center group hover:scale-105 transition-transform duration-300`}>
+              <div className={`text-6xl font-black mb-4 ${isDark ? 'bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent' : 'bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent'}`}>
                 {counter2}+
               </div>
               <div className={`font-bold text-lg ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>Innovation Projects Delivered</div>
-              <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-purple-500 to-pink-500' : 'from-purple-600 to-pink-600'} rounded-full mt-4 group-hover:scale-x-110 transition-transform duration-300`}></div>
+              <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-500' : 'from-amber-600 to-yellow-600'} rounded-full mt-4 group-hover:scale-x-110 transition-transform duration-300`}></div>
             </div>
             
-            <div className={`${isDark ? 'bg-gradient-to-br from-green-500/20 to-emerald-500/20 border-green-500/30' : 'bg-gradient-to-br from-green-200/40 to-emerald-200/40 border-green-400/40'} backdrop-blur-sm rounded-3xl p-8 border text-center group hover:scale-105 transition-transform duration-300`}>
-              <div className={`text-6xl font-black mb-4 ${isDark ? 'bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent' : 'bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent'}`}>
+            <div className={`${isDark ? 'bg-gradient-to-br from-amber-500/20 to-yellow-500/20 border-amber-500/30' : 'bg-gradient-to-br from-amber-200/40 to-yellow-200/40 border-amber-400/40'} backdrop-blur-sm rounded-3xl p-8 border text-center group hover:scale-105 transition-transform duration-300`}>
+              <div className={`text-6xl font-black mb-4 ${isDark ? 'bg-gradient-to-r from-amber-400 to-yellow-400 bg-clip-text text-transparent' : 'bg-gradient-to-r from-amber-600 to-yellow-600 bg-clip-text text-transparent'}`}>
                 {counter3}+
               </div>
               <div className={`font-bold text-lg ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>Global Clients & Partners</div>
-              <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-green-500 to-emerald-500' : 'from-green-600 to-emerald-600'} rounded-full mt-4 group-hover:scale-x-110 transition-transform duration-300`}></div>
+              <div className={`w-full h-1 bg-gradient-to-r ${isDark ? 'from-amber-500 to-yellow-500' : 'from-amber-600 to-yellow-600'} rounded-full mt-4 group-hover:scale-x-110 transition-transform duration-300`}></div>
             </div>
           </div>
         </div>
@@ -401,7 +396,7 @@ export default function AboutPage() {
       {/* Call to Action */}
       <section className="py-20 relative">
         <div className="container max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className={`${isDark ? 'bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 border-white/10' : 'bg-gradient-to-r from-blue-100/50 via-purple-100/50 to-pink-100/50 border-gray-200/30'} backdrop-blur-sm rounded-3xl p-16 border`}>
+          <div className={`${isDark ? 'bg-gradient-to-r from-amber-500/10 via-yellow-500/10 to-amber-500/10 border-white/10' : 'bg-gradient-to-r from-amber-100/50 via-yellow-100/50 to-amber-100/50 border-gray-200/30'} backdrop-blur-sm rounded-3xl p-16 border`}>
             <h2 className={`text-5xl md:text-6xl font-black mb-8 ${isDark ? 'text-white' : 'text-gray-900'}`}>
               Ready to Transform Your Digital Future?
             </h2>
@@ -409,7 +404,7 @@ export default function AboutPage() {
               Join us on a journey of innovation, creativity, and digital excellence. Let's build something extraordinary together.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className={`px-10 py-5 bg-gradient-to-r ${isDark ? 'from-blue-500 via-purple-500 to-pink-500' : 'from-blue-600 via-purple-600 to-pink-600'} rounded-2xl font-bold text-white text-lg hover:shadow-2xl ${isDark ? 'hover:shadow-purple-500/25' : 'hover:shadow-blue-500/25'} transition-all duration-300 transform hover:-translate-y-2 hover:scale-105`}>
+              <button className={`px-10 py-5 bg-gradient-to-r ${isDark ? 'from-amber-600 via-yellow-600 to-amber-600' : 'from-amber-700 via-yellow-700 to-amber-700'} rounded-2xl font-bold text-white text-lg hover:shadow-2xl ${isDark ? 'hover:shadow-amber-500/25' : 'hover:shadow-amber-500/25'} transition-all duration-300 transform hover:-translate-y-2 hover:scale-105`}>
                 Start Your Journey
               </button>
               <button className={`px-10 py-5 border-2 ${isDark ? 'border-white/20 hover:bg-white/10 hover:border-white/40' : 'border-gray-300/50 hover:bg-gray-100/50 hover:border-gray-400/60'} rounded-2xl font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 ${isDark ? 'text-white' : 'text-gray-900'}`}>
