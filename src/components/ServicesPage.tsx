@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Plus, Minus, Code, Video, Zap, Globe, Shield, Cloud, Brain, Settings } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
@@ -17,56 +18,56 @@ export default function ServicesPage() {
       title: "Custom Web & Mobile Development",
       description: "Tailored web and mobile applications designed to meet your specific business needs and user expectations.",
       icon: Code,
-      color: "from-blue-500 to-cyan-500"
+      color: "from-amber-600 to-yellow-700"
     },
     {
       id: "erp",
       title: "Enterprise Resource Planning (ERP) Systems",
       description: "Comprehensive ERP solutions that streamline operations, integrate business processes, and enhance productivity.",
       icon: Settings,
-      color: "from-green-500 to-emerald-500"
+      color: "from-amber-700 to-yellow-800"
     },
     {
       id: "crm",
       title: "Customer Relationship Management (CRM) Solutions",
       description: "Powerful CRM tools to manage customer interactions, improve relationships, and drive sales growth.",
       icon: Globe,
-      color: "from-purple-500 to-violet-500"
+      color: "from-yellow-600 to-amber-700"
     },
     {
       id: "seo",
       title: "Search Engine Optimization (SEO) Tools",
       description: "Advanced SEO strategies and tools to improve your online visibility and drive organic traffic to your website.",
       icon: Zap,
-      color: "from-yellow-500 to-orange-500"
+      color: "from-amber-500 to-yellow-600"
     },
     {
       id: "cybersecurity",
       title: "Cybersecurity Services",
       description: "Robust security solutions to protect your digital assets, data, and infrastructure from cyber threats.",
       icon: Shield,
-      color: "from-red-500 to-pink-500"
+      color: "from-yellow-700 to-amber-800"
     },
     {
       id: "cloud",
       title: "Cloud Infrastructure & Support",
       description: "Scalable cloud solutions with ongoing support to ensure your business operates efficiently and securely.",
       icon: Cloud,
-      color: "from-indigo-500 to-blue-500"
+      color: "from-amber-600 to-yellow-700"
     },
     {
       id: "ai",
       title: "AI Integration & Training",
       description: "Cutting-edge AI solutions tailored to your business needs, with comprehensive training for your team.",
       icon: Brain,
-      color: "from-teal-500 to-green-500"
+      color: "from-yellow-600 to-amber-700"
     },
     {
       id: "project",
       title: "Project Management Solutions",
       description: "Effective project management tools and methodologies to ensure successful delivery of your initiatives.",
       icon: Settings,
-      color: "from-orange-500 to-red-500"
+      color: "from-amber-700 to-yellow-800"
     },
   ];
 
@@ -76,56 +77,56 @@ export default function ServicesPage() {
       title: "Video Production & Photography",
       description: "Professional video and photo content creation to showcase your brand, products, and services.",
       icon: Video,
-      color: "from-pink-500 to-rose-500"
+      color: "from-amber-600 to-yellow-700"
     },
     {
       id: "content",
       title: "Content Strategy & Creation",
       description: "Strategic content planning and creation that resonates with your target audience and drives engagement.",
       icon: Code,
-      color: "from-purple-500 to-indigo-500"
+      color: "from-yellow-600 to-amber-700"
     },
     {
       id: "digital-marketing",
       title: "Digital Marketing Campaigns",
       description: "Comprehensive digital marketing campaigns designed to increase brand awareness and drive conversions.",
       icon: Zap,
-      color: "from-blue-500 to-purple-500"
+      color: "from-amber-700 to-yellow-800"
     },
     {
       id: "brand",
       title: "Brand Development & Identity",
       description: "Strategic brand development services to establish a strong, memorable identity in the marketplace.",
       icon: Globe,
-      color: "from-green-500 to-teal-500"
+      color: "from-yellow-700 to-amber-800"
     },
     {
       id: "social",
       title: "Social Media Management",
       description: "End-to-end social media management to build your online presence and engage with your community.",
       icon: Settings,
-      color: "from-orange-500 to-yellow-500"
+      color: "from-amber-600 to-yellow-700"
     },
     {
       id: "influencer",
       title: "Influencer Marketing",
       description: "Strategic partnerships with relevant influencers to amplify your brand message and reach new audiences.",
       icon: Globe,
-      color: "from-red-500 to-pink-500"
+      color: "from-yellow-600 to-amber-700"
     },
     {
       id: "distribution",
       title: "Media Distribution & Monetization",
       description: "Effective distribution strategies and monetization solutions to maximize the value of your content.",
       icon: Cloud,
-      color: "from-teal-500 to-cyan-500"
+      color: "from-amber-700 to-yellow-800"
     },
     {
       id: "analytics",
       title: "Analytics & Performance Tracking",
       description: "Comprehensive analytics and reporting to measure the impact of your media and marketing efforts.",
       icon: Brain,
-      color: "from-violet-500 to-purple-500"
+      color: "from-yellow-700 to-amber-800"
     },
   ];
 
@@ -156,24 +157,24 @@ export default function ServicesPage() {
     <div className={`min-h-screen transition-all duration-500 ${
       isDark 
         ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white' 
-        : 'bg-gradient-to-br from-blue-50 via-white to-purple-50 text-gray-900'
+        : 'bg-gradient-to-br from-amber-50 via-white to-yellow-50 text-gray-900'
     }`}>
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute top-20 right-20 w-72 h-72 rounded-full blur-3xl animate-pulse ${
           isDark 
-            ? 'bg-gradient-to-br from-blue-500/10 to-purple-500/10' 
-            : 'bg-gradient-to-br from-blue-500/20 to-purple-500/20'
+            ? 'bg-gradient-to-br from-amber-500/10 to-yellow-500/10' 
+            : 'bg-gradient-to-br from-amber-500/20 to-yellow-500/20'
         }`}></div>
         <div className={`absolute bottom-20 left-20 w-72 h-72 rounded-full blur-3xl animate-pulse delay-1000 ${
           isDark 
-            ? 'bg-gradient-to-br from-red-500/10 to-orange-500/10' 
-            : 'bg-gradient-to-br from-red-500/20 to-orange-500/20'
+            ? 'bg-gradient-to-br from-yellow-500/10 to-amber-500/10' 
+            : 'bg-gradient-to-br from-yellow-500/20 to-amber-500/20'
         }`}></div>
         <div className={`absolute top-1/3 left-1/3 w-64 h-64 rounded-full blur-3xl animate-pulse delay-2000 ${
           isDark 
-            ? 'bg-gradient-to-br from-green-500/10 to-teal-500/10' 
-            : 'bg-gradient-to-br from-green-500/20 to-teal-500/20'
+            ? 'bg-gradient-to-br from-amber-600/10 to-yellow-600/10' 
+            : 'bg-gradient-to-br from-amber-600/20 to-yellow-600/20'
         }`}></div>
       </div>
 
@@ -181,15 +182,10 @@ export default function ServicesPage() {
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <div className="inline-block mb-6">
-              <span className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full text-sm font-medium text-white shadow-lg">
-                Technology • Media • Innovation
-              </span>
-            </div>
             <h1 className={`text-6xl md:text-8xl font-black mb-8 leading-tight ${
               isDark 
                 ? 'bg-gradient-to-r from-white via-gray-300 to-gray-500 bg-clip-text text-transparent' 
-                : 'bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 bg-clip-text text-transparent'
+                : 'bg-gradient-to-r from-gray-900 via-amber-800 to-yellow-800 bg-clip-text text-transparent'
             }`}>
               Our Services
             </h1>
@@ -210,7 +206,7 @@ export default function ServicesPage() {
                   onClick={() => setActiveTab('tech')}
                   className={`px-8 py-4 rounded-xl font-bold transition-all duration-300 ${
                     activeTab === 'tech'
-                      ? 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white shadow-lg'
+                      ? 'bg-gradient-to-r from-amber-600 to-yellow-700 text-white shadow-lg'
                       : isDark 
                         ? 'text-gray-400 hover:text-white' 
                         : 'text-gray-600 hover:text-gray-900'
@@ -222,7 +218,7 @@ export default function ServicesPage() {
                   onClick={() => setActiveTab('media')}
                   className={`px-8 py-4 rounded-xl font-bold transition-all duration-300 ${
                     activeTab === 'media'
-                      ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-lg'
+                      ? 'bg-gradient-to-r from-amber-600 to-yellow-700 text-white shadow-lg'
                       : isDark 
                         ? 'text-gray-400 hover:text-white' 
                         : 'text-gray-600 hover:text-gray-900'
@@ -247,8 +243,8 @@ export default function ServicesPage() {
           >
             <div className={`rounded-3xl p-1 mb-16 ${
               isDark 
-                ? 'bg-gradient-to-r from-blue-500/20 to-cyan-500/20' 
-                : 'bg-gradient-to-r from-blue-500/30 to-cyan-500/30'
+                ? 'bg-gradient-to-r from-amber-500/20 to-yellow-500/20' 
+                : 'bg-gradient-to-r from-amber-500/30 to-yellow-500/30'
             }`}>
               <div className={`backdrop-blur-sm rounded-3xl overflow-hidden ${
                 isDark ? 'bg-gray-900/95' : 'bg-white/95'
@@ -258,8 +254,8 @@ export default function ServicesPage() {
                   <div className="relative h-96 lg:h-auto">
                     <div className={`absolute inset-0 z-10 ${
                       isDark 
-                        ? 'bg-gradient-to-br from-blue-500/20 to-cyan-500/20' 
-                        : 'bg-gradient-to-br from-blue-500/30 to-cyan-500/30'
+                        ? 'bg-gradient-to-br from-amber-500/20 to-yellow-500/20' 
+                        : 'bg-gradient-to-br from-amber-500/30 to-yellow-500/30'
                     }`}></div>
                     <img
                       src="https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F3.png?alt=media&token=7e750ac1-3b7b-40cd-a35f-f5adfb6a63cc"
@@ -267,8 +263,8 @@ export default function ServicesPage() {
                       className="w-full h-full object-cover"
                     />
                     {/* Floating Tech Elements */}
-                    <div className="absolute top-8 right-8 w-16 h-16 border-2 border-blue-400/50 rounded-lg rotate-45 animate-spin z-20"></div>
-                    <div className="absolute bottom-8 left-8 w-12 h-12 bg-gradient-to-r from-cyan-500/30 to-blue-500/30 rounded-full animate-pulse z-20"></div>
+                    <div className="absolute top-8 right-8 w-16 h-16 border-2 border-amber-400/50 rounded-lg rotate-45 animate-spin z-20"></div>
+                    <div className="absolute bottom-8 left-8 w-12 h-12 bg-gradient-to-r from-yellow-500/30 to-amber-500/30 rounded-full animate-pulse z-20"></div>
                   </div>
 
                   {/* Content Section */}
@@ -279,18 +275,18 @@ export default function ServicesPage() {
                       }`}>
                         Technology Services Division
                       </h2>
-                      <p className="text-xl text-blue-500 font-medium">
+                      <p className="text-xl text-amber-600 font-medium">
                         Building Tomorrow's Digital Infrastructure
                       </p>
                     </div>
 
                     <div className={`backdrop-blur-sm p-6 rounded-2xl border ${
                       isDark 
-                        ? 'bg-gray-800/50 border-blue-500/20' 
-                        : 'bg-blue-50/50 border-blue-500/30'
+                        ? 'bg-gray-800/50 border-amber-500/20' 
+                        : 'bg-amber-50/50 border-amber-500/30'
                     }`}>
                       <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
+                        <div className="w-8 h-8 bg-gradient-to-r from-amber-600 to-yellow-700 rounded-lg flex items-center justify-center">
                           <Code size={16} className="text-white" />
                         </div>
                         <p className={`leading-relaxed ${
@@ -330,8 +326,8 @@ export default function ServicesPage() {
                         </div>
                         <span className={`text-lg font-bold transition-colors duration-300 ${
                           isDark 
-                            ? 'text-white group-hover:text-blue-300' 
-                            : 'text-gray-900 group-hover:text-blue-600'
+                            ? 'text-white group-hover:text-amber-300' 
+                            : 'text-gray-900 group-hover:text-amber-600'
                         }`}>
                           {service.title}
                         </span>
@@ -373,8 +369,8 @@ export default function ServicesPage() {
           >
             <div className={`rounded-3xl p-1 mb-16 ${
               isDark 
-                ? 'bg-gradient-to-r from-pink-500/20 to-rose-500/20' 
-                : 'bg-gradient-to-r from-pink-500/30 to-rose-500/30'
+                ? 'bg-gradient-to-r from-amber-500/20 to-yellow-500/20' 
+                : 'bg-gradient-to-r from-amber-500/30 to-yellow-500/30'
             }`}>
               <div className={`backdrop-blur-sm rounded-3xl overflow-hidden ${
                 isDark ? 'bg-gray-900/95' : 'bg-white/95'
@@ -388,18 +384,18 @@ export default function ServicesPage() {
                       }`}>
                         Media & Digital Services
                       </h2>
-                      <p className="text-xl text-pink-500 font-medium">
+                      <p className="text-xl text-amber-600 font-medium">
                         Amplifying African Stories, Globally
                       </p>
                     </div>
 
                     <div className={`backdrop-blur-sm p-6 rounded-2xl border ${
                       isDark 
-                        ? 'bg-gray-800/50 border-pink-500/20' 
-                        : 'bg-pink-50/50 border-pink-500/30'
+                        ? 'bg-gray-800/50 border-amber-500/20' 
+                        : 'bg-amber-50/50 border-amber-500/30'
                     }`}>
                       <div className="flex items-start gap-4">
-                        <div className="w-8 h-8 bg-gradient-to-r from-pink-500 to-rose-500 rounded-lg flex items-center justify-center">
+                        <div className="w-8 h-8 bg-gradient-to-r from-amber-600 to-yellow-700 rounded-lg flex items-center justify-center">
                           <Video size={16} className="text-white" />
                         </div>
                         <p className={`leading-relaxed ${
@@ -417,8 +413,8 @@ export default function ServicesPage() {
                   <div className="relative h-96 lg:h-auto order-1 lg:order-2">
                     <div className={`absolute inset-0 z-10 ${
                       isDark 
-                        ? 'bg-gradient-to-br from-pink-500/20 to-rose-500/20' 
-                        : 'bg-gradient-to-br from-pink-500/30 to-rose-500/30'
+                        ? 'bg-gradient-to-br from-amber-500/20 to-yellow-500/20' 
+                        : 'bg-gradient-to-br from-amber-500/30 to-yellow-500/30'
                     }`}></div>
                     <img
                       src="https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2020.56.50.jpg?alt=media&token=750742b4-89df-4943-afe4-88fbc4993ba2"
@@ -426,8 +422,8 @@ export default function ServicesPage() {
                       className="w-full h-full object-cover object-left"
                     />
                     {/* Floating Media Elements */}
-                    <div className="absolute top-8 left-8 w-14 h-14 border-2 border-pink-400/50 rounded-full animate-ping z-20"></div>
-                    <div className="absolute bottom-8 right-8 w-10 h-10 bg-gradient-to-r from-rose-500/30 to-pink-500/30 rounded-lg animate-pulse z-20"></div>
+                    <div className="absolute top-8 left-8 w-14 h-14 border-2 border-amber-400/50 rounded-full animate-ping z-20"></div>
+                    <div className="absolute bottom-8 right-8 w-10 h-10 bg-gradient-to-r from-yellow-500/30 to-amber-500/30 rounded-lg animate-pulse z-20"></div>
                   </div>
                 </div>
               </div>
@@ -456,8 +452,8 @@ export default function ServicesPage() {
                         </div>
                         <span className={`text-lg font-bold transition-colors duration-300 ${
                           isDark 
-                            ? 'text-white group-hover:text-pink-300' 
-                            : 'text-gray-900 group-hover:text-pink-600'
+                            ? 'text-white group-hover:text-amber-300' 
+                            : 'text-gray-900 group-hover:text-amber-600'
                         }`}>
                           {service.title}
                         </span>
@@ -493,8 +489,8 @@ export default function ServicesPage() {
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className={`backdrop-blur-sm rounded-3xl p-12 border ${
             isDark 
-              ? 'bg-gradient-to-r from-blue-500/10 via-purple-500/10 to-pink-500/10 border-white/10' 
-              : 'bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 border-white/20 shadow-2xl'
+              ? 'bg-gradient-to-r from-amber-500/10 via-yellow-500/10 to-amber-600/10 border-white/10' 
+              : 'bg-gradient-to-r from-amber-500/20 via-yellow-500/20 to-amber-600/20 border-white/20 shadow-2xl'
           }`}>
             <h2 className={`text-4xl md:text-5xl font-black mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
@@ -509,7 +505,7 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => navigate("/contact")}
-                className="px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-xl font-bold text-white hover:shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 transform hover:-translate-y-1"
+                className="px-8 py-4 bg-gradient-to-r from-amber-600 via-yellow-600 to-amber-700 rounded-xl font-bold text-white hover:shadow-2xl hover:shadow-amber-500/25 transition-all duration-300 transform hover:-translate-y-1"
               >
                 Start Your Project
               </button>
