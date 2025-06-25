@@ -273,7 +273,7 @@ export default function ServicesPage() {
                       <h2 className={`text-4xl lg:text-5xl font-black mb-4 ${
                         isDark ? 'text-white' : 'text-gray-900'
                       }`}>
-                        Technology Services Division
+                        Technology Services
                       </h2>
                       <p className="text-xl text-amber-600 font-medium">
                         Building Tomorrow's Digital Infrastructure
