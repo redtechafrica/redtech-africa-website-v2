@@ -207,7 +207,7 @@ export default function HomePage() {
             <div className="w-40 h-1 bg-gradient-to-r from-amber-700 to-amber-600 mx-auto"></div>
           </div>
 
-          {/* Technology Services Division */}
+          {/* Technology Services */}
           <div 
             data-animate
             className={`grid lg:grid-cols-2 gap-16 items-center mb-24 transition-all duration-1000 transform ${
@@ -233,7 +233,7 @@ export default function HomePage() {
               <div>
                 <h3 className={`text-4xl font-black mb-4 ${
                   isDark ? 'text-white' : 'text-gray-900'
-                }`}>Technology Services Division</h3>
+                }`}>Technology Services</h3>
                 <p className={`text-xl font-medium mb-6 ${
                   isDark ? 'text-amber-300' : 'text-amber-700'
                 }`}>Building Tomorrow's Digital Infrastructure</p>
