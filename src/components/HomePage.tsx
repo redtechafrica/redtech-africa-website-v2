@@ -67,14 +67,14 @@ export default function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <section className={`relative min-h-screen flex items-center justify-center ${
+      <section className={`relative min-h-screen flex items-center justify-center pt-20 md:pt-0 ${
         isDark 
           ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white'
           : 'bg-gradient-to-br from-amber-50 via-white to-amber-100 text-gray-900'
       }`}>
         <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
-          <div className="space-y-8">
-            <h1 className={`text-6xl md:text-8xl lg:text-9xl font-black leading-tight ${
+          <div className="space-y-6 md:space-y-8">
+            <h1 className={`text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-black leading-tight ${
               isDark 
                 ? 'bg-gradient-to-r from-white via-amber-200 to-amber-300 bg-clip-text text-transparent'
                 : 'bg-gradient-to-r from-gray-900 via-amber-700 to-amber-800 bg-clip-text text-transparent'
@@ -82,20 +82,20 @@ export default function HomePage() {
               Powering Africa's Digital Future
             </h1>
             
-            <p className={`text-2xl md:text-3xl max-w-4xl mx-auto leading-relaxed ${
+            <p className={`text-lg sm:text-xl md:text-3xl max-w-4xl mx-auto leading-relaxed px-4 ${
               isDark ? 'text-gray-200' : 'text-gray-700'
             }`}>
               Through Innovation & Storytelling, we bridge technology and media to help 
               businesses scale, creatives thrive, and communities connect across Africa and beyond.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center pt-6 md:pt-8 px-4">
               <button
                 onClick={() => navigate('/services')}
-                className="px-12 py-6 bg-gradient-to-r from-amber-700 via-amber-600 to-amber-500 rounded-2xl font-bold text-white text-xl hover:shadow-2xl hover:shadow-amber-600/25 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center gap-3"
+                className="px-8 md:px-12 py-4 md:py-6 bg-gradient-to-r from-amber-700 via-amber-600 to-amber-500 rounded-2xl font-bold text-white text-lg md:text-xl hover:shadow-2xl hover:shadow-amber-600/25 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 flex items-center justify-center gap-3"
               >
                 Explore Our Solutions
-                <ArrowRight size={24} />
+                <ArrowRight size={20} className="md:w-6 md:h-6" />
               </button>
             </div>
           </div>
