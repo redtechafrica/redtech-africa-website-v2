@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Calendar, MapPin, Award, Users, Zap, Globe, Building2, Rocket } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar, MapPin, Award, Users, Zap, Globe, Building2, Rocket, Shield } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 
 export default function NewsPage() {
@@ -10,98 +11,147 @@ export default function NewsPage() {
   const events = [
     {
       id: 'event1',
-      title: 'REDtech Africa Hosts Tech Innovators Summit',
-      date: 'July 22, 2024',
-      location: 'Lagos, Nigeria',
+      title: 'AgriConnect Hackathon & Summit',
+      date: 'May 28–30, 2025',
+      location: 'Oriental Hotel, Victoria Island, Lagos',
       description:
-        'REDtech Africa successfully hosted the Tech Innovators Summit, bringing together leading tech experts, startups, and investors from across Africa. The summit featured keynote speeches, panel discussions, and workshops focused on driving technological advancements and fostering innovation in the region.',
+        'The 2025 AgriConnect Summit brought together Africa\'s agricultural thought leaders — including former President Olusegun Obasanjo, Lagos Governor Babajide Sanwo-Olu, and AfDB President Akinwumi Adesina — to address food security and agripreneurship. Hosted by the DiceyTech platform, the summit featured a two-day workshop for agripreneurs and culminated in a high-energy AgriTech Hackathon.',
       highlights: [
-        'Keynote by industry leader, Dr. Aisha Bakare',
-        'Panel discussion on the future of AI in Africa',
-        'Startup pitch competition with $10,000 in prizes',
+        'Keynote by former President Olusegun Obasanjo',
+        'Panel discussion with Lagos Governor Babajide Sanwo-Olu',
+        'AgriTech Hackathon with innovative solutions for food security',
+        'REDtech Africa founders served as guest speakers and award ceremony hosts',
       ],
       images: [
-        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.25.40.jpg?alt=media&token=0fa14a70-baad-4215-97e4-f2cc66b7429d',
-        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.28.35.png?alt=media&token=1ce21401-4139-4163-baba-265f2ac843a9',
-        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.34.48.jpg?alt=media&token=52f014fc-56fe-4369-8c4e-be58d1424a11',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.48.53.png?alt=media&token=08f75024-a947-4cf4-a646-44364c38b80c',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.05.34.png?alt=media&token=159e6909-05df-459f-8e6c-507d6fc14c7d',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.05.49.png?alt=media&token=e4b16bf7-82bc-4519-9de2-146d1fdd834e',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.06.10.png?alt=media&token=737335f5-e3fc-46e7-82f8-196d32481a98',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.05.03.png?alt=media&token=9b85849a-d855-4c87-8449-0c0e06e01676',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fagriconnect_hackathon_may_2025%2FScreenshot%202025-06-24%20at%2019.04.45.png?alt=media&token=326a2605-1f3d-4190-86c3-6035c3210189',
       ],
-      link: 'https://www.example.com/tech-innovators-summit',
+      link: 'https://agriconnectsummit.com',
     },
     {
       id: 'event2',
-      title: 'REDtech Africa Partners with Local Schools for STEM Education',
-      date: 'June 15, 2024',
-      location: 'Various Locations, Nigeria',
+      title: 'Startup World Cup Lagos Regional Final',
+      date: 'March 27, 2025',
+      location: 'Muson Centre, Victoria Island, Lagos',
       description:
-        'REDtech Africa has launched a new initiative to support STEM education in local schools. The company is providing resources, training, and mentorship to students and teachers to promote interest and skills in science, technology, engineering, and mathematics.',
+        'David Ogundepo, Tech Innovation Lead at REDtech Africa, was selected among the top 10 startups to pitch at the Startup World Cup Lagos Regional. Held at the Muson Centre and organized by Tech Unite Africa, the event featured hundreds of guests, investors, and sponsors. David presented The Yearbook App product, showcasing its innovative approach to digital storytelling.',
       highlights: [
-        'Donation of computers and educational software to 10 schools',
-        'Training workshops for teachers on innovative STEM teaching methods',
-        'Mentorship program connecting students with tech professionals',
+        'Top 10 startup selection for regional competition',
+        'Presentation of The Yearbook App by David Ogundepo',
+        'Networking with investors and industry leaders',
+        'Part of global series leading to San Francisco finale',
       ],
       images: [
-        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F3.png?alt=media&token=7e750ac1-3b7b-40cd-a35f-f5adfb6a63cc',
-        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2020.56.50.jpg?alt=media&token=750742b4-89df-4943-afe4-88fbc4993ba2',
-        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG_8171.jpg?alt=media&token=3865fa96-5015-4e5d-9505-29a432b208bc',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG_8163.jpg?alt=media&token=aa8b43a6-0bad-4a63-805b-249046dc6a6c',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG_6278.jpg?alt=media&token=38ffe06b-a3cd-45f6-ae95-28373e414fb7',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FIMG-20250328-WA0015.jpg?alt=media&token=9c623987-0ff7-4ee9-93a5-94fde1bba051',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Ftech_unite_africa_startup_worldcup_march_2025%2FScreenshot_2025-06-24_at_19.36.40.png?alt=media&token=1894a68b-67c9-4af8-a88b-f8a026a552bf',
       ],
-      link: 'https://www.example.com/stem-education-initiative',
+      link: 'https://www.startupworldcup.io/lagos-app-2025',
+    },
+    {
+      id: 'event3',
+      title: 'REDtech at DataFest Africa 2024',
+      date: 'October 17–19, 2024',
+      location: 'Daystar Hall, Lagos',
+      description:
+        'DataFest Africa, the continent\'s premier data science conference, returned to Daystar Hall (Star Hub), Lagos. REDtech Africa hosted an exhibition booth via the DiceyTech hackathon platform. Founders Adedapo Olawunmi and Dolamu Sowunmi, along with Executive Director Ayo Olokan and other team members, engaged attendees and oversaw the award ceremony for DiceyTech Hackathon winners.',
+      highlights: [
+        'Exhibition booth at Africa\'s premier data science conference',
+        'Award ceremony for DiceyTech Hackathon winners',
+        'Engagement with government officials, academia, and startups',
+        'Collaboration with industry leaders and tech professionals',
+      ],
+      images: [
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2020.01.28.jpeg?alt=media&token=5183b93a-2544-46e6-baf2-4c4448742c7a',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FIMG_20241019_160501.jpg?alt=media&token=4bb4c8d6-151c-4cad-896f-a9372fffc36d',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FPhoto%20from%20D.jpg?alt=media&token=b63ca407-2cac-481d-87ea-07391987acef',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2016.29.11%20(2).jpeg?alt=media&token=8f3d8a52-cffa-4106-b186-47b98064831a',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2016.29.11%20(5).jpeg?alt=media&token=ce72c517-d907-4c71-8842-6c49f9457897',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2FWhatsApp%20Image%202024-10-19%20at%2020.01.29.jpeg?alt=media&token=b53997b3-03ee-4ea8-b332-54df7caf2e72',
+        'https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech_africa_websitee_v2%2Fnews_page%2Fdatafest_october_2024%2F0BLK_5582.jpg?alt=media&token=67a32d95-8247-4bf2-aacc-82bc0af5ea51',
+      ],
+      link: 'https://www.datacommunityafrica.org',
     },
   ];
 
   const globalNews = [
     {
-      title: 'AI Set to Transform African Agriculture',
+      title: 'Cloudflare Launches Large-Scale Crawler Blocking to Protect Publishers',
       summary:
-        'Artificial intelligence is poised to revolutionize agriculture in Africa, with applications ranging from precision farming to improved crop yields and disease detection.',
+        'Cloudflare is rolling out a new tool to curb AI and web crawlers that scrape content at shocking scales without driving traffic back to publishers—sometimes at ratios of 18,000 crawled pages to just one visit.',
+      region: 'Global/US',
+      significance:
+        'This is a big step to protect original journalism in the AI era, ensuring publishers can monetize their work rather than being bypassed by bots.',
+      icon: <Shield size={32} className="text-amber-700" />,
+    },
+    {
+      title: 'TikTok Doubles Down on News Creators Amid Stalled U.S. Sale Talks',
+      summary:
+        'TikTok is actively bolstering its news creator ecosystem, hiring a dedicated creator manager for North America. This comes as U.S. negotiations over a potential sale remain stuck, pending Chinese approval.',
+      region: 'US/Global',
+      significance:
+        'It highlights TikTok\'s shifting strategy—from entertainment to news—and the geopolitical pressures shaping its U.S. presence and content moderation.',
+      icon: <Globe size={32} className="text-amber-700" />,
+    },
+    {
+      title: 'DeepSeek Shakes Up AI with Low-Cost Rival Model',
+      summary:
+        'Chinese startup DeepSeek launched a low-cost large language model that shot to the top of the App Store charts, spurring outages amid heavy demand.',
+      region: 'China/Asia',
+      significance:
+        'DeepSeek\'s rise demonstrates China\'s growing edge in AI, challenging U.S. dominance—even amid export controls on high-powered chips.',
+      icon: <Rocket size={32} className="text-amber-700" />,
+    },
+    {
+      title: 'Japan, U.S. and Taiwan Deepen Semiconductor and AI Ties',
+      summary:
+        'Japan is attracting massive AI and semiconductor investments from U.S. giants: AWS ($14B), Microsoft ($2.9B), and Google, while TSMC continues expanding fabs and R&D capacity in Japan and Germany.',
+      region: 'Asia',
+      significance:
+        'These moves emphasize a broader push to diversify chip and AI production away from China, enhancing East Asian resilience in a geopolitically tense tech race.',
+      icon: <Building2 size={32} className="text-amber-700" />,
+    },
+    {
+      title: 'U.S.–China Trade Tensions Intensify Around Tech Tariffs and 5G Security',
+      summary:
+        'The U.S. continues imposing higher tariffs (up to 100%) on Chinese tech imports—EV batteries, solar cells—while limiting Huawei and ZTE\'s role in 5G networks.',
+      region: 'US/China',
+      significance:
+        'This underscores how economic strategies and national security concerns are increasingly shaping global technology infrastructure and supply chains.',
+      icon: <Zap size={32} className="text-amber-700" />,
+    },
+    {
+      title: 'African Tech Startups Raise Record $2.4 Billion in Funding',
+      summary:
+        'African tech startups secured record funding in 2024, with fintech, healthtech, and agritech leading the charge. Nigeria, Kenya, and South Africa dominated the funding landscape.',
       region: 'Africa',
       significance:
-        'AI technologies can help address food security challenges and boost economic growth in the region.',
-      icon: <Globe size={32} className="text-amber-600" />,
+        'This milestone demonstrates growing investor confidence in African innovation and the continent\'s potential to solve local and global challenges through technology.',
+      icon: <Building2 size={32} className="text-amber-700" />,
     },
     {
-      title: 'Nigeria Leads in Mobile Technology Adoption',
+      title: 'Nigeria Launches National AI Strategy to Boost Digital Economy',
       summary:
-        'Nigeria is at the forefront of mobile technology adoption in Africa, with a high penetration rate and innovative mobile solutions driving economic development.',
-      region: 'Nigeria',
+        'Nigeria\'s Minister of Communications emphasized using AI across sectors to help the country hit its $1 trillion economy target by 2030, with deployments in healthcare, agriculture, finance, and governance.',
+      region: 'Nigeria/Africa',
       significance:
-        'Mobile technology is empowering businesses, connecting communities, and transforming industries across the country.',
-      icon: <Zap size={32} className="text-amber-600" />,
+        'This strategic move positions Nigeria as a leader in AI adoption across Africa, potentially accelerating economic growth and technological advancement.',
+      icon: <Rocket size={32} className="text-amber-700" />,
     },
     {
-      title: 'Tech Hubs Fueling Innovation Across Africa',
+      title: 'South African EdTech Platform Expands Across Sub-Saharan Africa',
       summary:
-        'Tech hubs are emerging as key drivers of innovation and entrepreneurship across Africa, providing resources, mentorship, and networking opportunities for startups and tech professionals.',
+        'A leading South African educational technology platform announced expansion into 12 new African countries, providing digital learning solutions to underserved communities.',
       region: 'Africa',
       significance:
-        'These hubs are fostering a vibrant tech ecosystem and attracting investment to the region.',
-      icon: <Building2 size={32} className="text-amber-600" />,
-    },
-    {
-      title: 'New Space Program Aims to Boost Technological Growth',
-      summary:
-        'A new space program has been launched with the goal of accelerating technological advancements and fostering innovation in the aerospace industry.',
-      region: 'Global',
-      significance:
-        'This initiative is expected to drive research and development, create jobs, and enhance technological capabilities.',
-      icon: <Rocket size={32} className="text-amber-600" />,
-    },
-    {
-      title: 'Global Tech Conference Highlights Emerging Trends',
-      summary:
-        'A major global technology conference recently concluded, showcasing the latest trends and innovations in artificial intelligence, blockchain, and cybersecurity.',
-      region: 'Global',
-      significance:
-        'The conference provided valuable insights into the future of technology and its impact on various industries.',
-      icon: <Globe size={32} className="text-amber-600" />,
-    },
-    {
-      title: 'Investment in Cybersecurity Startups on the Rise',
-      summary:
-        'Venture capital investment in cybersecurity startups is increasing globally, driven by growing concerns about data breaches and cyber threats.',
-      region: 'Global',
-      significance:
-        'This trend is expected to fuel innovation in cybersecurity technologies and enhance protection against cyberattacks.',
-      icon: <Shield size={32} className="text-amber-600" />,
+        'This expansion addresses the education gap across Africa while demonstrating the scalability of homegrown tech solutions across the continent.',
+      icon: <Users size={32} className="text-amber-700" />,
     },
   ];
 
@@ -144,13 +194,13 @@ export default function NewsPage() {
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute -top-40 -right-40 w-80 h-80 rounded-full blur-3xl animate-pulse ${
           isDark 
-            ? 'bg-gradient-to-br from-amber-600/20 to-amber-700/20' 
-            : 'bg-gradient-to-br from-amber-600/30 to-amber-700/30'
+            ? 'bg-gradient-to-br from-amber-700/20 to-amber-800/20' 
+            : 'bg-gradient-to-br from-amber-700/30 to-amber-800/30'
         }`}></div>
         <div className={`absolute -bottom-40 -left-40 w-80 h-80 rounded-full blur-3xl animate-pulse delay-1000 ${
           isDark 
-            ? 'bg-gradient-to-br from-amber-700/20 to-amber-800/20' 
-            : 'bg-gradient-to-br from-amber-700/30 to-amber-800/30'
+            ? 'bg-gradient-to-br from-amber-800/20 to-amber-900/20' 
+            : 'bg-gradient-to-br from-amber-800/30 to-amber-900/30'
         }`}></div>
       </div>
 
@@ -183,11 +233,11 @@ export default function NewsPage() {
               isVisible[0] ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}
           >
-            <span className="text-amber-600 font-bold text-lg uppercase tracking-wider">Company Events</span>
+            <span className="text-amber-700 font-bold text-lg uppercase tracking-wider">Company Events</span>
             <h2 className={`text-5xl font-black mt-2 mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
             }`}>Our Recent Activities</h2>
-            <div className="w-40 h-1 bg-gradient-to-r from-amber-700 to-amber-600 mx-auto"></div>
+            <div className="w-40 h-1 bg-gradient-to-r from-amber-800 to-amber-700 mx-auto"></div>
           </div>
 
           {events.map((event, index) => (
@@ -200,14 +250,14 @@ export default function NewsPage() {
             >
               <div className={`backdrop-blur-sm rounded-3xl p-8 md:p-12 border ${
                 isDark 
-                  ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-amber-600/20'
+                  ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-amber-700/20'
                   : 'bg-gradient-to-br from-white/80 to-amber-50/80 border-amber-200/30'
               }`}>
                 <div className={`grid lg:grid-cols-2 gap-12 items-start ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   {/* Content */}
                   <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                     <div className="flex items-center space-x-4 mb-6">
-                      <div className="w-3 h-3 bg-amber-600 rounded-full animate-pulse"></div>
+                      <div className="w-3 h-3 bg-amber-700 rounded-full animate-pulse"></div>
                       <span className={`text-sm font-medium uppercase tracking-wider ${
                         isDark ? 'text-gray-400' : 'text-gray-500'
                       }`}>
@@ -223,7 +273,7 @@ export default function NewsPage() {
 
                     <div className="flex flex-wrap gap-4 mb-6">
                       <div className="flex items-center gap-2">
-                        <Calendar size={16} className="text-amber-600" />
+                        <Calendar size={16} className="text-amber-700" />
                         <span className={`text-sm font-medium ${
                           isDark ? 'text-gray-300' : 'text-gray-600'
                         }`}>
@@ -231,7 +281,7 @@ export default function NewsPage() {
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin size={16} className="text-amber-600" />
+                        <MapPin size={16} className="text-amber-700" />
                         <span className={`text-sm font-medium ${
                           isDark ? 'text-gray-300' : 'text-gray-600'
                         }`}>
@@ -249,14 +299,14 @@ export default function NewsPage() {
                     {event.highlights && (
                       <div className="space-y-3">
                         <h4 className={`text-lg font-bold ${
-                          isDark ? 'text-amber-300' : 'text-amber-700'
+                          isDark ? 'text-amber-300' : 'text-amber-800'
                         }`}>
                           Event Highlights:
                         </h4>
                         <ul className="space-y-2">
                           {event.highlights.map((highlight, idx) => (
                             <li key={idx} className="flex items-start gap-3">
-                              <Award size={16} className="text-amber-600 mt-1 flex-shrink-0" />
+                              <Award size={16} className="text-amber-700 mt-1 flex-shrink-0" />
                               <span className={`text-sm ${
                                 isDark ? 'text-gray-300' : 'text-gray-600'
                               }`}>
@@ -276,7 +326,7 @@ export default function NewsPage() {
                           rel="noopener noreferrer"
                           className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold border transition-all duration-300 ${
                             isDark 
-                              ? 'bg-gradient-to-r from-gray-800 to-gray-700 text-white border-amber-600 hover:border-amber-400'
+                              ? 'bg-gradient-to-r from-gray-800 to-gray-700 text-white border-amber-700 hover:border-amber-500'
                               : 'bg-gradient-to-r from-amber-100 to-amber-200 text-gray-900 border-amber-300 hover:border-amber-500'
                           }`}
                         >
@@ -330,7 +380,7 @@ export default function NewsPage() {
                                 onClick={() => setCurrentSlides(prev => ({ ...prev, [event.id]: idx }))}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                                   idx === (currentSlides[event.id] || 0)
-                                    ? 'bg-amber-600'
+                                    ? 'bg-amber-700'
                                     : isDark 
                                       ? 'bg-white/30 hover:bg-white/50'
                                       : 'bg-black/30 hover:bg-black/50'
@@ -353,11 +403,11 @@ export default function NewsPage() {
       <section className="py-20 relative">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <span className="text-amber-600 font-bold text-lg uppercase tracking-wider">Global Tech & Media</span>
+            <span className="text-amber-700 font-bold text-lg uppercase tracking-wider">Global Tech & Media</span>
             <h2 className={`text-5xl font-black mt-2 mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
             }`}>Recent News & Insights</h2>
-            <div className="w-40 h-1 bg-gradient-to-r from-amber-700 to-amber-600 mx-auto"></div>
+            <div className="w-40 h-1 bg-gradient-to-r from-amber-800 to-amber-700 mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -366,7 +416,7 @@ export default function NewsPage() {
                 key={index}
                 className={`backdrop-blur-sm rounded-2xl p-6 border transition-all duration-300 hover:scale-105 ${
                   isDark 
-                    ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-amber-600/20 hover:border-amber-600/40'
+                    ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-amber-700/20 hover:border-amber-700/40'
                     : 'bg-gradient-to-br from-white/80 to-amber-50/80 border-amber-200/30 hover:border-amber-200/50'
                 }`}
               >
@@ -382,8 +432,8 @@ export default function NewsPage() {
                     </h3>
                     <span className={`text-xs font-medium px-2 py-1 rounded-full ${
                       isDark 
-                        ? 'bg-amber-600/20 text-amber-300'
-                        : 'bg-amber-100 text-amber-700'
+                        ? 'bg-amber-700/20 text-amber-300'
+                        : 'bg-amber-100 text-amber-800'
                     }`}>
                       {article.region}
                     </span>
@@ -412,8 +462,8 @@ export default function NewsPage() {
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className={`backdrop-blur-sm rounded-3xl p-12 border ${
             isDark 
-              ? 'bg-gradient-to-r from-amber-600/10 to-amber-700/10 border-white/10'
-              : 'bg-gradient-to-r from-amber-600/20 to-amber-700/20 border-white/20 shadow-2xl'
+              ? 'bg-gradient-to-r from-amber-700/10 to-amber-800/10 border-white/10'
+              : 'bg-gradient-to-r from-amber-700/20 to-amber-800/20 border-white/20 shadow-2xl'
           }`}>
             <h2 className={`text-4xl md:text-5xl font-black mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
@@ -430,7 +480,7 @@ export default function NewsPage() {
                 href="/contact"
                 className={`px-8 py-4 border-2 rounded-xl font-bold transition-all duration-300 inline-block ${
                   isDark 
-                    ? 'border-amber-600/20 text-white hover:bg-amber-600/10' 
+                    ? 'border-amber-700/20 text-white hover:bg-amber-700/10' 
                     : 'border-amber-300 text-gray-900 hover:bg-amber-100'
                 }`}
               >
@@ -443,4 +493,3 @@ export default function NewsPage() {
     </div>
   );
 }
-</lov-write>
