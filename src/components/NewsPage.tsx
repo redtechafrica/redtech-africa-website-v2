@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Calendar, MapPin, Award, Users, Zap, Globe, Building2, Rocket, Shield } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -88,7 +87,7 @@ export default function NewsPage() {
       region: 'Global/US',
       significance:
         'This is a big step to protect original journalism in the AI era, ensuring publishers can monetize their work rather than being bypassed by bots.',
-      icon: <Shield size={32} className="text-amber-700" />,
+      icon: <Shield size={32} className="text-[#8e5e42]" />,
     },
     {
       title: 'TikTok Doubles Down on News Creators Amid Stalled U.S. Sale Talks',
@@ -97,7 +96,7 @@ export default function NewsPage() {
       region: 'US/Global',
       significance:
         'It highlights TikTok\'s shifting strategy—from entertainment to news—and the geopolitical pressures shaping its U.S. presence and content moderation.',
-      icon: <Globe size={32} className="text-amber-700" />,
+      icon: <Globe size={32} className="text-[#8e5e42]" />,
     },
     {
       title: 'DeepSeek Shakes Up AI with Low-Cost Rival Model',
@@ -106,7 +105,7 @@ export default function NewsPage() {
       region: 'China/Asia',
       significance:
         'DeepSeek\'s rise demonstrates China\'s growing edge in AI, challenging U.S. dominance—even amid export controls on high-powered chips.',
-      icon: <Rocket size={32} className="text-amber-700" />,
+      icon: <Rocket size={32} className="text-[#8e5e42]" />,
     },
     {
       title: 'Japan, U.S. and Taiwan Deepen Semiconductor and AI Ties',
@@ -115,7 +114,7 @@ export default function NewsPage() {
       region: 'Asia',
       significance:
         'These moves emphasize a broader push to diversify chip and AI production away from China, enhancing East Asian resilience in a geopolitically tense tech race.',
-      icon: <Building2 size={32} className="text-amber-700" />,
+      icon: <Building2 size={32} className="text-[#8e5e42]" />,
     },
     {
       title: 'U.S.–China Trade Tensions Intensify Around Tech Tariffs and 5G Security',
@@ -124,7 +123,7 @@ export default function NewsPage() {
       region: 'US/China',
       significance:
         'This underscores how economic strategies and national security concerns are increasingly shaping global technology infrastructure and supply chains.',
-      icon: <Zap size={32} className="text-amber-700" />,
+      icon: <Zap size={32} className="text-[#8e5e42]" />,
     },
     {
       title: 'African Tech Startups Raise Record $2.4 Billion in Funding',
@@ -133,7 +132,7 @@ export default function NewsPage() {
       region: 'Africa',
       significance:
         'This milestone demonstrates growing investor confidence in African innovation and the continent\'s potential to solve local and global challenges through technology.',
-      icon: <Building2 size={32} className="text-amber-700" />,
+      icon: <Building2 size={32} className="text-[#8e5e42]" />,
     },
     {
       title: 'Nigeria Launches National AI Strategy to Boost Digital Economy',
@@ -142,7 +141,7 @@ export default function NewsPage() {
       region: 'Nigeria/Africa',
       significance:
         'This strategic move positions Nigeria as a leader in AI adoption across Africa, potentially accelerating economic growth and technological advancement.',
-      icon: <Rocket size={32} className="text-amber-700" />,
+      icon: <Rocket size={32} className="text-[#8e5e42]" />,
     },
     {
       title: 'South African EdTech Platform Expands Across Sub-Saharan Africa',
@@ -151,7 +150,7 @@ export default function NewsPage() {
       region: 'Africa',
       significance:
         'This expansion addresses the education gap across Africa while demonstrating the scalability of homegrown tech solutions across the continent.',
-      icon: <Users size={32} className="text-amber-700" />,
+      icon: <Users size={32} className="text-[#8e5e42]" />,
     },
   ];
 
@@ -188,19 +187,19 @@ export default function NewsPage() {
     <div className={`min-h-screen transition-all duration-500 ${
       isDark 
         ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white' 
-        : 'bg-gradient-to-br from-amber-50 via-white to-amber-100 text-gray-900'
+        : 'bg-gradient-to-br from-[#8e5e42]/5 via-white to-[#8e5e42]/10 text-gray-900'
     }`}>
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute -top-40 -right-40 w-80 h-80 rounded-full blur-3xl animate-pulse ${
           isDark 
-            ? 'bg-gradient-to-br from-amber-700/20 to-amber-800/20' 
-            : 'bg-gradient-to-br from-amber-700/30 to-amber-800/30'
+            ? 'bg-gradient-to-br from-[#8e5e42]/20 to-[#8e5e42]/20' 
+            : 'bg-gradient-to-br from-[#8e5e42]/30 to-[#8e5e42]/30'
         }`}></div>
         <div className={`absolute -bottom-40 -left-40 w-80 h-80 rounded-full blur-3xl animate-pulse delay-1000 ${
           isDark 
-            ? 'bg-gradient-to-br from-amber-800/20 to-amber-900/20' 
-            : 'bg-gradient-to-br from-amber-800/30 to-amber-900/30'
+            ? 'bg-gradient-to-br from-[#8e5e42]/20 to-[#8e5e42]/20' 
+            : 'bg-gradient-to-br from-[#8e5e42]/30 to-[#8e5e42]/30'
         }`}></div>
       </div>
 
@@ -210,8 +209,8 @@ export default function NewsPage() {
           <div className="text-center mb-16">
             <h1 className={`text-6xl md:text-8xl font-black mb-8 leading-tight ${
               isDark 
-                ? 'bg-gradient-to-r from-white via-amber-300 to-amber-500 bg-clip-text text-transparent' 
-                : 'bg-gradient-to-r from-gray-900 via-amber-800 to-amber-900 bg-clip-text text-transparent'
+                ? 'bg-gradient-to-r from-white via-[#8e5e42] to-[#8e5e42] bg-clip-text text-transparent' 
+                : 'bg-gradient-to-r from-gray-900 via-[#8e5e42] to-[#8e5e42] bg-clip-text text-transparent'
             }`}>
               News & Events
             </h1>
@@ -233,11 +232,11 @@ export default function NewsPage() {
               isVisible[0] ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
             }`}
           >
-            <span className="text-amber-700 font-bold text-lg uppercase tracking-wider">Company Events</span>
+            <span className="text-[#8e5e42] font-bold text-lg uppercase tracking-wider">Company Events</span>
             <h2 className={`text-5xl font-black mt-2 mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
             }`}>Our Recent Activities</h2>
-            <div className="w-40 h-1 bg-gradient-to-r from-amber-800 to-amber-700 mx-auto"></div>
+            <div className="w-40 h-1 bg-[#8e5e42] mx-auto"></div>
           </div>
 
           {events.map((event, index) => (
@@ -250,14 +249,14 @@ export default function NewsPage() {
             >
               <div className={`backdrop-blur-sm rounded-3xl p-8 md:p-12 border ${
                 isDark 
-                  ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-amber-700/20'
-                  : 'bg-gradient-to-br from-white/80 to-amber-50/80 border-amber-200/30'
+                  ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-[#8e5e42]/20'
+                  : 'bg-gradient-to-br from-white/80 to-[#8e5e42]/5 border-[#8e5e42]/20'
               }`}>
                 <div className={`grid lg:grid-cols-2 gap-12 items-start ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                   {/* Content */}
                   <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
                     <div className="flex items-center space-x-4 mb-6">
-                      <div className="w-3 h-3 bg-amber-700 rounded-full animate-pulse"></div>
+                      <div className="w-3 h-3 bg-[#8e5e42] rounded-full animate-pulse"></div>
                       <span className={`text-sm font-medium uppercase tracking-wider ${
                         isDark ? 'text-gray-400' : 'text-gray-500'
                       }`}>
@@ -273,7 +272,7 @@ export default function NewsPage() {
 
                     <div className="flex flex-wrap gap-4 mb-6">
                       <div className="flex items-center gap-2">
-                        <Calendar size={16} className="text-amber-700" />
+                        <Calendar size={16} className="text-[#8e5e42]" />
                         <span className={`text-sm font-medium ${
                           isDark ? 'text-gray-300' : 'text-gray-600'
                         }`}>
@@ -281,7 +280,7 @@ export default function NewsPage() {
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <MapPin size={16} className="text-amber-700" />
+                        <MapPin size={16} className="text-[#8e5e42]" />
                         <span className={`text-sm font-medium ${
                           isDark ? 'text-gray-300' : 'text-gray-600'
                         }`}>
@@ -299,14 +298,14 @@ export default function NewsPage() {
                     {event.highlights && (
                       <div className="space-y-3">
                         <h4 className={`text-lg font-bold ${
-                          isDark ? 'text-amber-300' : 'text-amber-800'
+                          isDark ? 'text-[#8e5e42]' : 'text-[#8e5e42]'
                         }`}>
                           Event Highlights:
                         </h4>
                         <ul className="space-y-2">
                           {event.highlights.map((highlight, idx) => (
                             <li key={idx} className="flex items-start gap-3">
-                              <Award size={16} className="text-amber-700 mt-1 flex-shrink-0" />
+                              <Award size={16} className="text-[#8e5e42] mt-1 flex-shrink-0" />
                               <span className={`text-sm ${
                                 isDark ? 'text-gray-300' : 'text-gray-600'
                               }`}>
@@ -326,8 +325,8 @@ export default function NewsPage() {
                           rel="noopener noreferrer"
                           className={`inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold border transition-all duration-300 ${
                             isDark 
-                              ? 'bg-gradient-to-r from-gray-800 to-gray-700 text-white border-amber-700 hover:border-amber-500'
-                              : 'bg-gradient-to-r from-amber-100 to-amber-200 text-gray-900 border-amber-300 hover:border-amber-500'
+                              ? 'bg-gradient-to-r from-gray-800 to-gray-700 text-white border-[#8e5e42] hover:border-[#8e5e42]'
+                              : 'bg-gradient-to-r from-[#8e5e42]/10 to-[#8e5e42]/20 text-gray-900 border-[#8e5e42] hover:border-[#8e5e42]'
                           }`}
                         >
                           Learn More
@@ -380,7 +379,7 @@ export default function NewsPage() {
                                 onClick={() => setCurrentSlides(prev => ({ ...prev, [event.id]: idx }))}
                                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                                   idx === (currentSlides[event.id] || 0)
-                                    ? 'bg-amber-700'
+                                    ? 'bg-[#8e5e42]'
                                     : isDark 
                                       ? 'bg-white/30 hover:bg-white/50'
                                       : 'bg-black/30 hover:bg-black/50'
@@ -403,11 +402,11 @@ export default function NewsPage() {
       <section className="py-20 relative">
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <span className="text-amber-700 font-bold text-lg uppercase tracking-wider">Global Tech & Media</span>
+            <span className="text-[#8e5e42] font-bold text-lg uppercase tracking-wider">Global Tech & Media</span>
             <h2 className={`text-5xl font-black mt-2 mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
             }`}>Recent News & Insights</h2>
-            <div className="w-40 h-1 bg-gradient-to-r from-amber-800 to-amber-700 mx-auto"></div>
+            <div className="w-40 h-1 bg-[#8e5e42] mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -416,8 +415,8 @@ export default function NewsPage() {
                 key={index}
                 className={`backdrop-blur-sm rounded-2xl p-6 border transition-all duration-300 hover:scale-105 ${
                   isDark 
-                    ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-amber-700/20 hover:border-amber-700/40'
-                    : 'bg-gradient-to-br from-white/80 to-amber-50/80 border-amber-200/30 hover:border-amber-200/50'
+                    ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-[#8e5e42]/20 hover:border-[#8e5e42]/40'
+                    : 'bg-gradient-to-br from-white/80 to-[#8e5e42]/5 border-[#8e5e42]/20 hover:border-[#8e5e42]/30'
                 }`}
               >
                 <div className="flex items-start gap-3 mb-4">
@@ -432,8 +431,8 @@ export default function NewsPage() {
                     </h3>
                     <span className={`text-xs font-medium px-2 py-1 rounded-full ${
                       isDark 
-                        ? 'bg-amber-700/20 text-amber-300'
-                        : 'bg-amber-100 text-amber-800'
+                        ? 'bg-[#8e5e42]/20 text-[#8e5e42]'
+                        : 'bg-[#8e5e42]/10 text-[#8e5e42]'
                     }`}>
                       {article.region}
                     </span>
@@ -462,8 +461,8 @@ export default function NewsPage() {
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className={`backdrop-blur-sm rounded-3xl p-12 border ${
             isDark 
-              ? 'bg-gradient-to-r from-amber-700/10 to-amber-800/10 border-white/10'
-              : 'bg-gradient-to-r from-amber-700/20 to-amber-800/20 border-white/20 shadow-2xl'
+              ? 'bg-gradient-to-r from-[#8e5e42]/10 to-[#8e5e42]/10 border-white/10'
+              : 'bg-gradient-to-r from-[#8e5e42]/10 to-[#8e5e42]/20 border-white/20 shadow-2xl'
           }`}>
             <h2 className={`text-4xl md:text-5xl font-black mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
@@ -480,8 +479,8 @@ export default function NewsPage() {
                 href="/contact"
                 className={`px-8 py-4 border-2 rounded-xl font-bold transition-all duration-300 inline-block ${
                   isDark 
-                    ? 'border-amber-700/20 text-white hover:bg-amber-700/10' 
-                    : 'border-amber-300 text-gray-900 hover:bg-amber-100'
+                    ? 'border-[#8e5e42]/20 text-white hover:bg-[#8e5e42]/10' 
+                    : 'border-[#8e5e42] text-gray-900 hover:bg-[#8e5e42]/10'
                 }`}
               >
                 Contact Us for Updates
