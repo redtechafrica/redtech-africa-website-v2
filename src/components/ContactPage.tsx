@@ -1,4 +1,3 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -135,15 +134,15 @@ export default function ContactPage() {
 
   return (
     <div className={`min-h-screen w-full transition-colors duration-300 ${
-      isDark ? 'bg-gray-900' : 'bg-amber-50'
+      isDark ? 'bg-gray-900' : 'bg-[#8e5e42]/5'
     }`}>
       {/* Animated background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute -top-40 -right-40 w-80 h-80 rounded-full opacity-20 animate-pulse ${
-          isDark ? 'bg-amber-600' : 'bg-amber-600'
+          isDark ? 'bg-[#8e5e42]' : 'bg-[#8e5e42]'
         }`}></div>
         <div className={`absolute -bottom-40 -left-40 w-80 h-80 rounded-full opacity-20 animate-pulse delay-1000 ${
-          isDark ? 'bg-amber-700' : 'bg-amber-700'
+          isDark ? 'bg-[#8e5e42]' : 'bg-[#8e5e42]'
         }`}></div>
       </div>
       
@@ -155,7 +154,7 @@ export default function ContactPage() {
         </h1>
 
         <div className={`p-6 sm:p-8 rounded-lg shadow-sm mb-12 transition-colors duration-300 ${
-          isDark ? 'bg-gray-800 shadow-amber-600/10' : 'bg-white shadow-amber-600/10'
+          isDark ? 'bg-gray-800 shadow-[#8e5e42]/10' : 'bg-white shadow-[#8e5e42]/10'
         }`}>
           <form ref={form} onSubmit={handleSubmit} className="space-y-6">
             <div className="grid sm:grid-cols-2 gap-6">
@@ -163,7 +162,7 @@ export default function ContactPage() {
                 <label htmlFor="firstName" className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}>
-                  First Name <span className="text-amber-600">*</span>
+                  First Name <span className="text-[#8e5e42]">*</span>
                 </label>
                 <Input 
                   id="firstName" 
@@ -176,7 +175,7 @@ export default function ContactPage() {
                 <label htmlFor="lastName" className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}>
-                  Last Name <span className="text-amber-600">*</span>
+                  Last Name <span className="text-[#8e5e42]">*</span>
                 </label>
                 <Input 
                   id="lastName" 
@@ -192,7 +191,7 @@ export default function ContactPage() {
                 <label htmlFor="email" className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}>
-                  Email <span className="text-amber-600">*</span>
+                  Email <span className="text-[#8e5e42]">*</span>
                 </label>
                 <Input 
                   id="email" 
@@ -206,7 +205,7 @@ export default function ContactPage() {
                 <label htmlFor="companyName" className={`text-sm transition-colors duration-300 ${
                   isDark ? 'text-gray-300' : 'text-gray-700'
                 }`}>
-                  Company Name <span className="text-amber-600">*</span>
+                  Company Name <span className="text-[#8e5e42]">*</span>
                 </label>
                 <Input 
                   id="companyName" 
@@ -221,7 +220,7 @@ export default function ContactPage() {
               <label htmlFor="reasonForEnquiry" className={`text-sm transition-colors duration-300 ${
                 isDark ? 'text-gray-300' : 'text-gray-700'
               }`}>
-                Reason for enquiry <span className="text-amber-600">*</span>
+                Reason for enquiry <span className="text-[#8e5e42]">*</span>
               </label>
               <Select name="reasonForEnquiry" value={reasonForEnquiry} onValueChange={setReasonForEnquiry} required>
                 <SelectTrigger className={isDark ? 'bg-gray-700 border-gray-600 text-white' : ''}>
@@ -262,7 +261,7 @@ export default function ContactPage() {
                 informed about our technology and media services, product updates, and industry insights. By submitting
                 this form, you agree to receive these communications from us. For more details on how we handle and
                 protect your data, please review our{" "}
-                <a href="/privacy" className="text-amber-600 hover:underline">
+                <a href="/privacy" className="text-[#8e5e42] hover:underline">
                   Privacy Policy
                 </a>
                 .
@@ -276,8 +275,8 @@ export default function ContactPage() {
               disabled={isSubmitting || !emailJSLoaded} 
               className={`w-32 transition-all duration-300 ${
                 isDark 
-                  ? 'border-amber-600 text-amber-400 hover:bg-amber-600/10' 
-                  : 'border-amber-600 text-amber-700 hover:bg-amber-600/10'
+                  ? 'border-[#8e5e42] text-[#8e5e42] hover:bg-[#8e5e42]/10' 
+                  : 'border-[#8e5e42] text-[#8e5e42] hover:bg-[#8e5e42]/10'
               }`}
             >
               {isSubmitting ? (
@@ -339,7 +338,7 @@ export default function ContactPage() {
                   <a 
                     href="mailto:hello@redtechafrica.com" 
                     className={`transition-colors duration-300 ${
-                      isDark ? 'text-gray-300 hover:text-amber-400' : 'text-gray-700 hover:text-amber-600'
+                      isDark ? 'text-gray-300 hover:text-[#8e5e42]' : 'text-gray-700 hover:text-[#8e5e42]'
                     }`}
                   >
                     hello@redtechafrica.com
@@ -349,7 +348,7 @@ export default function ContactPage() {
                   <a
                     href="#"
                     onClick={(e) => handleGetDirections(e, "Trocadero Square in Lekki Phase 1 Lagos, Nigeria")}
-                    className="text-amber-600 hover:underline"
+                    className="text-[#8e5e42] hover:underline"
                   >
                     Get Directions {">"}
                   </a>
@@ -393,7 +392,7 @@ export default function ContactPage() {
                   <a 
                     href="mailto:hello@redtechafrica.com" 
                     className={`transition-colors duration-300 ${
-                      isDark ? 'text-gray-300 hover:text-amber-400' : 'text-gray-700 hover:text-amber-600'
+                      isDark ? 'text-gray-300 hover:text-[#8e5e42]' : 'text-gray-700 hover:text-[#8e5e42]'
                     }`}
                   >
                     hello@redtechafrica.com
@@ -405,7 +404,7 @@ export default function ContactPage() {
                     onClick={(e) =>
                       handleGetDirections(e, "Royal Estate Phase 1, Eric Moore, Surulere, Lagos, Nigeria")
                     }
-                    className="text-amber-600 hover:underline"
+                    className="text-[#8e5e42] hover:underline"
                   >
                     Get Directions {">"}
                   </a>

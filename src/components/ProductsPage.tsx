@@ -19,8 +19,8 @@ export default function ProductsPage() {
       target: "Perfect for: Secondary schools, universities, colleges",
       status: "",
       image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817",
-      color: "from-amber-700 to-amber-600",
-      accent: "bg-amber-600",
+      color: "bg-[#8e5e42]",
+      accent: "bg-[#8e5e42]",
       link: "https://apps.apple.com/us/app/yearbook-academy/id6740851135"
     },
     {
@@ -32,8 +32,8 @@ export default function ProductsPage() {
       target: "",
       status: "Currently serving: Multiple businesses across various industries",
       image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-30%20at%2011.25.02.png?alt=media&token=9150c0eb-0659-4bc1-b033-ca807430e96a",
-      color: "from-amber-800 to-amber-700",
-      accent: "bg-amber-700",
+      color: "bg-[#8e5e42]",
+      accent: "bg-[#8e5e42]",
       link: "https://trifusion-erpwxyv.rollout.site/#dashboard"
     },
     {
@@ -45,8 +45,8 @@ export default function ProductsPage() {
       target: "",
       status: "Impact: Prizes awarded, careers launched, communities built",
       image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.28.35.png?alt=media&token=1ce21401-4139-4163-baba-265f2ac843a9",
-      color: "from-amber-600 to-amber-500",
-      accent: "bg-amber-500",
+      color: "bg-[#8e5e42]",
+      accent: "bg-[#8e5e42]",
       link: "https://diceytech.co.uk/"
     },
     {
@@ -58,8 +58,8 @@ export default function ProductsPage() {
       target: "",
       status: "Coming Soon: Launch with exclusive African originals",
       image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.34.48.jpg?alt=media&token=52f014fc-56fe-4369-8c4e-be58d1424a11",
-      color: "from-amber-700 to-amber-800",
-      accent: "bg-amber-800",
+      color: "bg-[#8e5e42]",
+      accent: "bg-[#8e5e42]",
       link: "https://redstream-webapp-platform.vercel.app/"
     },
   ];
@@ -87,24 +87,24 @@ export default function ProductsPage() {
     <div className={`min-h-screen transition-all duration-500 ${
       isDark 
         ? 'bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white' 
-        : 'bg-gradient-to-br from-amber-50 via-white to-amber-100 text-gray-900'
+        : 'bg-gradient-to-br from-[#8e5e42]/5 via-white to-[#8e5e42]/10 text-gray-900'
     }`}>
       {/* Animated Background */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className={`absolute -top-40 -right-40 w-80 h-80 rounded-full blur-3xl animate-pulse ${
           isDark 
-            ? 'bg-gradient-to-br from-amber-600/20 to-amber-700/20' 
-            : 'bg-gradient-to-br from-amber-600/30 to-amber-700/30'
+            ? 'bg-[#8e5e42]/20' 
+            : 'bg-[#8e5e42]/30'
         }`}></div>
         <div className={`absolute -bottom-40 -left-40 w-80 h-80 rounded-full blur-3xl animate-pulse delay-1000 ${
           isDark 
-            ? 'bg-gradient-to-br from-amber-700/20 to-amber-800/20' 
-            : 'bg-gradient-to-br from-amber-700/30 to-amber-800/30'
+            ? 'bg-[#8e5e42]/20' 
+            : 'bg-[#8e5e42]/30'
         }`}></div>
         <div className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full blur-3xl animate-pulse delay-2000 ${
           isDark 
-            ? 'bg-gradient-to-br from-amber-500/10 to-amber-600/10' 
-            : 'bg-gradient-to-br from-amber-500/20 to-amber-600/20'
+            ? 'bg-[#8e5e42]/10' 
+            : 'bg-[#8e5e42]/20'
         }`}></div>
       </div>
 
@@ -114,8 +114,8 @@ export default function ProductsPage() {
           <div className="text-center mb-16">
             <h1 className={`text-6xl md:text-8xl font-black mb-8 leading-tight ${
               isDark 
-                ? 'bg-gradient-to-r from-white via-amber-300 to-amber-500 bg-clip-text text-transparent' 
-                : 'bg-gradient-to-r from-gray-900 via-amber-800 to-amber-900 bg-clip-text text-transparent'
+                ? 'bg-gradient-to-r from-white via-[#8e5e42] text-transparent bg-clip-text' 
+                : 'bg-gradient-to-r from-gray-900 via-[#8e5e42] to-[#8e5e42] bg-clip-text text-transparent'
             }`}>
               Our Products
             </h1>
@@ -129,15 +129,15 @@ export default function ProductsPage() {
             <div className="relative mt-16 h-64">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className={`w-32 h-32 border-2 rounded-lg rotate-45 animate-spin ${
-                  isDark ? 'border-amber-600/30' : 'border-amber-600/50'
+                  isDark ? 'border-[#8e5e42]/30' : 'border-[#8e5e42]/50'
                 }`}></div>
                 <div className={`absolute w-24 h-24 border-2 rounded-full animate-pulse ${
-                  isDark ? 'border-amber-700/30' : 'border-amber-700/50'
+                  isDark ? 'border-[#8e5e42]/30' : 'border-[#8e5e42]/50'
                 }`}></div>
                 <div className={`absolute w-16 h-16 rounded-full animate-bounce ${
                   isDark 
-                    ? 'bg-gradient-to-r from-amber-600/30 to-amber-700/30' 
-                    : 'bg-gradient-to-r from-amber-600/50 to-amber-700/50'
+                    ? 'bg-[#8e5e42]/30' 
+                    : 'bg-[#8e5e42]/50'
                 }`}></div>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function ProductsPage() {
                 isVisible[index] ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
               }`}
             >
-              <div className={`relative rounded-3xl overflow-hidden bg-gradient-to-r ${product.color} p-1 group hover:scale-[1.02] transition-all duration-500`}>
+              <div className={`relative rounded-3xl overflow-hidden ${product.color} p-1 group hover:scale-[1.02] transition-all duration-500`}>
                 <div className={`backdrop-blur-sm rounded-3xl p-8 md:p-12 ${
                   isDark ? 'bg-gray-900/95' : 'bg-white/95'
                 }`}>
@@ -179,21 +179,21 @@ export default function ProductsPage() {
                           isDark ? 'text-white' : 'text-gray-900'
                         }`}
                       >
-                        <span className="relative z-10 bg-gradient-to-r from-current via-current to-current bg-clip-text text-transparent group-hover/title:from-amber-400 group-hover/title:via-amber-500 group-hover/title:to-amber-600 transition-all duration-500">
+                        <span className="relative z-10 bg-gradient-to-r from-current via-current to-current bg-clip-text text-transparent group-hover/title:from-[#8e5e42] group-hover/title:via-[#8e5e42] group-hover/title:to-[#8e5e42] transition-all duration-500">
                           {product.title}
                         </span>
                         
                         {/* Animated underline */}
-                        <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-600 via-amber-700 to-amber-800 group-hover/title:w-full transition-all duration-700 ease-out"></div>
+                        <div className="absolute bottom-0 left-0 w-0 h-1 bg-[#8e5e42] group-hover/title:w-full transition-all duration-700 ease-out"></div>
                         
                         {/* Glow effect */}
                         <div className="absolute inset-0 opacity-0 group-hover/title:opacity-100 transition-opacity duration-500">
-                          <div className="absolute inset-0 bg-gradient-to-r from-amber-600/20 via-amber-700/20 to-amber-800/20 blur-xl rounded-lg"></div>
+                          <div className="absolute inset-0 bg-[#8e5e42]/20 blur-xl rounded-lg"></div>
                         </div>
                         
                         {/* Click indicator */}
                         <div className="absolute -top-2 -right-2 opacity-0 group-hover/title:opacity-100 transform translate-x-2 group-hover/title:translate-x-0 transition-all duration-300">
-                          <div className="w-6 h-6 bg-gradient-to-r from-amber-600 to-amber-700 rounded-full flex items-center justify-center">
+                          <div className="w-6 h-6 bg-[#8e5e42] rounded-full flex items-center justify-center">
                             <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                             </svg>
@@ -202,16 +202,16 @@ export default function ProductsPage() {
                         
                         {/* Floating particles */}
                         <div className="absolute inset-0 opacity-0 group-hover/title:opacity-100 transition-opacity duration-500 pointer-events-none">
-                          <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-amber-400 rounded-full animate-ping"></div>
-                          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-amber-500 rounded-full animate-ping delay-150"></div>
-                          <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-amber-600 rounded-full animate-ping delay-300"></div>
+                          <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-[#8e5e42] rounded-full animate-ping"></div>
+                          <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-[#8e5e42] rounded-full animate-ping delay-150"></div>
+                          <div className="absolute top-1/2 right-1/3 w-1 h-1 bg-[#8e5e42] rounded-full animate-ping delay-300"></div>
                         </div>
                       </h3>
                       
                       <h4 className={`text-xl md:text-2xl font-bold mb-6 ${
                         isDark 
-                          ? 'bg-gradient-to-r from-amber-300 to-amber-500 bg-clip-text text-transparent' 
-                          : 'bg-gradient-to-r from-amber-700 to-amber-800 bg-clip-text text-transparent'
+                          ? 'text-[#8e5e42]' 
+                          : 'text-[#8e5e42]'
                       }`}>
                         {product.subtitle}
                       </h4>
@@ -225,15 +225,15 @@ export default function ProductsPage() {
                       <div className="space-y-3">
                         {product.target && (
                           <div className="flex items-center space-x-3">
-                            <div className="w-2 h-2 bg-amber-500 rounded-full"></div>
-                            <p className="text-amber-600 font-medium">{product.target}</p>
+                            <div className="w-2 h-2 bg-[#8e5e42] rounded-full"></div>
+                            <p className="text-[#8e5e42] font-medium">{product.target}</p>
                           </div>
                         )}
                         
                         {product.status && (
                           <div className="flex items-center space-x-3">
-                            <div className="w-2 h-2 bg-amber-600 rounded-full animate-pulse"></div>
-                            <p className="text-amber-600 font-medium">{product.status}</p>
+                            <div className="w-2 h-2 bg-[#8e5e42] rounded-full animate-pulse"></div>
+                            <p className="text-[#8e5e42] font-medium">{product.status}</p>
                           </div>
                         )}
                       </div>
@@ -244,8 +244,8 @@ export default function ProductsPage() {
                           onClick={() => handleProductClick(product.link)}
                           className={`group/btn relative px-8 py-4 rounded-xl font-bold border transition-all duration-300 overflow-hidden ${
                             isDark 
-                              ? 'bg-gradient-to-r from-gray-800 to-gray-700 text-white border-amber-600 hover:border-amber-400' 
-                              : 'bg-gradient-to-r from-amber-100 to-amber-200 text-gray-900 border-amber-300 hover:border-amber-500'
+                              ? 'bg-gradient-to-r from-gray-800 to-gray-700 text-white border-[#8e5e42] hover:border-[#8e5e42]/80' 
+                              : 'bg-gradient-to-r from-[#8e5e42]/10 to-[#8e5e42]/20 text-gray-900 border-[#8e5e42]/30 hover:border-[#8e5e42]'
                           }`}
                         >
                           <span className="relative z-10 flex items-center space-x-2">
@@ -254,7 +254,7 @@ export default function ProductsPage() {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                             </svg>
                           </span>
-                          <div className="absolute inset-0 bg-gradient-to-r from-amber-600/0 via-amber-600/50 to-amber-600/0 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
+                          <div className="absolute inset-0 bg-[#8e5e42]/0 hover:bg-[#8e5e42]/50 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
                         </button>
                       </div>
                     </div>
@@ -270,8 +270,8 @@ export default function ProductsPage() {
                         />
                         
                         {/* Floating Elements */}
-                        <div className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-white/20 to-transparent rounded-full animate-ping"></div>
-                        <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-white/30 to-transparent rounded-full animate-pulse"></div>
+                        <div className="absolute -top-4 -right-4 w-8 h-8 bg-white/20 rounded-full animate-ping"></div>
+                        <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-white/30 rounded-full animate-pulse"></div>
                       </div>
                     </div>
                   </div>
@@ -287,8 +287,8 @@ export default function ProductsPage() {
         <div className="container max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className={`backdrop-blur-sm rounded-3xl p-12 border ${
             isDark 
-              ? 'bg-gradient-to-r from-amber-600/10 to-amber-700/10 border-white/10' 
-              : 'bg-gradient-to-r from-amber-600/20 to-amber-700/20 border-white/20 shadow-2xl'
+              ? 'bg-[#8e5e42]/10 border-white/10' 
+              : 'bg-[#8e5e42]/20 border-white/20 shadow-2xl'
           }`}>
             <h2 className={`text-4xl md:text-5xl font-black mb-6 ${
               isDark ? 'text-white' : 'text-gray-900'
@@ -305,8 +305,8 @@ export default function ProductsPage() {
                 onClick={() => navigate("/contact")} 
                 className={`px-8 py-4 border-2 rounded-xl font-bold transition-all duration-300 ${
                   isDark 
-                    ? 'border-amber-600/20 text-white hover:bg-amber-600/10' 
-                    : 'border-amber-300 text-gray-900 hover:bg-amber-100'
+                    ? 'border-[#8e5e42]/20 text-white hover:bg-[#8e5e42]/10' 
+                    : 'border-[#8e5e42]/30 text-gray-900 hover:bg-[#8e5e42]/10'
                 }`}
               >
                 Schedule a Demo

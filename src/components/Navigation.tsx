@@ -33,14 +33,14 @@ export function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
           ? isDark
-            ? 'bg-gray-900/95 shadow-2xl shadow-amber-600/10'
-            : 'bg-white/95 shadow-2xl shadow-amber-600/10'
+            ? 'bg-gray-900/95 shadow-2xl shadow-[#8e5e42]/10'
+            : 'bg-white/95 shadow-2xl shadow-[#8e5e42]/10'
           : 'bg-transparent'
       } backdrop-blur-xl border-b ${
         scrolled
           ? isDark
-            ? 'border-amber-600/20'
-            : 'border-amber-600/20'
+            ? 'border-[#8e5e42]/20'
+            : 'border-[#8e5e42]/20'
           : 'border-transparent'
       }`}
     >
@@ -54,7 +54,7 @@ export function Navigation() {
                 alt="REDtech Africa"
                 className="w-12 h-12 object-contain group-hover:scale-110 transition-transform duration-300"
               />
-              <div className="absolute inset-0 bg-amber-600/20 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-[#8e5e42]/20 rounded-xl opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300"></div>
             </div>
             <span className={`font-bold text-lg hidden sm:inline transition-colors duration-300 ${
               isDark ? 'text-white' : 'text-gray-900'
@@ -76,7 +76,7 @@ export function Navigation() {
                 }`}
               >
                 {link.label}
-                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-amber-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
+                <span className="absolute inset-x-0 -bottom-1 h-0.5 bg-[#8e5e42] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 rounded-full"></span>
               </a>
             ))}
           </div>
@@ -88,8 +88,8 @@ export function Navigation() {
               onClick={toggleTheme}
               className={`relative w-16 h-8 rounded-full transition-all duration-500 ${
                 isDark
-                  ? 'bg-gradient-to-r from-amber-700 to-amber-600'
-                  : 'bg-gradient-to-r from-orange-400 to-yellow-400'
+                  ? 'bg-[#8e5e42]'
+                  : 'bg-[#8e5e42]'
               } shadow-lg hover:shadow-xl`}
             >
               <div
@@ -98,9 +98,9 @@ export function Navigation() {
                 }`}
               >
                 {isDark ? (
-                  <Moon size={12} className="text-amber-700" />
+                  <Moon size={12} className="text-[#8e5e42]" />
                 ) : (
-                  <Sun size={12} className="text-orange-500" />
+                  <Sun size={12} className="text-[#8e5e42]" />
                 )}
               </div>
               <div className="absolute inset-0 rounded-full opacity-0 hover:opacity-20 bg-white transition-opacity duration-300"></div>
@@ -109,8 +109,8 @@ export function Navigation() {
             {/* Contact Button */}
             <Button className={`rounded-full px-6 font-semibold transition-all duration-300 ${
               isDark
-                ? 'bg-gradient-to-r from-amber-700 to-amber-600 hover:shadow-lg hover:shadow-amber-600/25 text-white'
-                : 'bg-gradient-to-r from-amber-700 to-amber-600 hover:shadow-lg hover:shadow-amber-600/25 text-white'
+                ? 'bg-[#8e5e42] hover:shadow-lg hover:shadow-[#8e5e42]/25 text-white hover:bg-[#8e5e42]/90'
+                : 'bg-[#8e5e42] hover:shadow-lg hover:shadow-[#8e5e42]/25 text-white hover:bg-[#8e5e42]/90'
             } hover:scale-105`}>
               <a href="/contact">Contact Us</a>
             </Button>
@@ -123,14 +123,14 @@ export function Navigation() {
               onClick={toggleTheme}
               className={`w-10 h-10 rounded-xl transition-all duration-300 flex items-center justify-center ${
                 isDark
-                  ? 'bg-amber-600/20 hover:bg-amber-600/30'
-                  : 'bg-orange-500/20 hover:bg-orange-500/30'
+                  ? 'bg-[#8e5e42]/20 hover:bg-[#8e5e42]/30'
+                  : 'bg-[#8e5e42]/20 hover:bg-[#8e5e42]/30'
               }`}
             >
               {isDark ? (
-                <Moon size={18} className="text-amber-400" />
+                <Moon size={18} className="text-[#8e5e42]" />
               ) : (
-                <Sun size={18} className="text-orange-500" />
+                <Sun size={18} className="text-[#8e5e42]" />
               )}
             </button>
 
