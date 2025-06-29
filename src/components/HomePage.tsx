@@ -150,7 +150,7 @@ export default function HomePage() {
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className={`px-6 py-3 rounded-full font-medium ${
-                  iisDark 
+                  isDark 
                     ? 'bg-[#8e5e42]/20 border border-[#8e5e42]/30 text-gray-300'
                     : 'bg-[#8e5e42]/10 border border-[#8e5e42]/20 text-gray-600'
                 }`}>
