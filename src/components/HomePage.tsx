@@ -158,8 +158,8 @@ export default function HomePage() {
                 </div>
                 <div className={`px-6 py-3 rounded-full font-medium ${
                   isDark 
-                    ? 'bg-[#8e5e42]/20 border border-[#8e5e42]/30 text-[#8e5e42]'
-                    : 'bg-[#8e5e42]/10 border border-[#8e5e42]/20 text-[#8e5e42]'
+                    ? 'bg-[#8e5e42]/20 border border-[#8e5e42]/30 text-gray-300'
+                    : 'bg-[#8e5e42]/10 border border-[#8e5e42]/20 text-gray-600'
                 }`}>
                   20+ Projects Delivered
                 </div>
