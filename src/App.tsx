@@ -9,10 +9,11 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import Index from "./pages/Index";
 import AboutPage from "./components/AboutPage";
-import ServicesPage from "./components/ServicesPage";
-import ProductsPage from "./components/ProductsPage";
+import ResourcingPage from "./components/ResourcingPage";
+import EdTechPage from "./components/EdTechPage";
+import TechnologyPage from "./components/TechnologyPage";
 import ContactPage from "./components/ContactPage";
-import NewsPage from "./components/NewsPage";
+import InsightsPage from "./components/InsightsPage";
 import PrivacyPage from "./pages/PrivacyPage";
 import TermsPage from "./pages/TermsPage";
 import NotFound from "./pages/NotFound";
@@ -31,9 +32,10 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<><AboutPage /><Footer /></>} />
-              <Route path="/services" element={<><ServicesPage /><Footer /></>} />
-              <Route path="/products" element={<><ProductsPage /><Footer /></>} />
-              <Route path="/news" element={<><NewsPage /><Footer /></>} />
+              <Route path="/resourcing" element={<><ResourcingPage /><Footer /></>} />
+              <Route path="/edtech" element={<><EdTechPage /><Footer /></>} />
+              <Route path="/technology" element={<><TechnologyPage /><Footer /></>} />
+              <Route path="/insights" element={<><InsightsPage /><Footer /></>} />
               <Route path="/contact" element={<><ContactPage /><Footer /></>} />
               <Route path="/privacy" element={<><PrivacyPage /><Footer /></>} />
               <Route path="/terms" element={<><TermsPage /><Footer /></>} />

@@ -21,11 +21,12 @@ export function Navigation() {
 
   const navLinks = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About Us' },
-    { href: '/services', label: 'Services' },
-    { href: '/products', label: 'Products' },
-    { href: '/news', label: 'News' },
-    { href: '/contact', label: 'Contact Us' },
+    { href: '/about', label: 'About' },
+    { href: '/resourcing', label: 'Resourcing' },
+    { href: '/edtech', label: 'EdTech' },
+    { href: '/technology', label: 'Technology' },
+    { href: '/insights', label: 'Insights' },
+    { href: '/contact', label: 'Contact' },
   ];
 
   return (
