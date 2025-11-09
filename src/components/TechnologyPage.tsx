@@ -34,9 +34,9 @@ export default function TechnologyPage() {
   const products = [
     {
       title: "Trade Credit Solution",
-      description: "AI-powered credit management platform for financial institutions. Streamline lending operations with intelligent risk assessment and automated workflows.",
+      description: "AI powered credit management platform for financial institutions. Streamline lending operations with intelligent risk assessment and automated workflows.",
       features: [
-        "Real-time credit scoring and risk assessment",
+        "Real time credit scoring and risk assessment",
         "Automated loan processing and approval",
         "Portfolio management and monitoring",
         "Comprehensive reporting and analytics"
@@ -45,9 +45,9 @@ export default function TechnologyPage() {
     },
     {
       title: "Pawning App",
-      description: "Digital platform for collateral-based lending with automated valuation. Modern solution for pawnshops and lending institutions.",
+      description: "Digital platform for collateral based lending with automated valuation. Modern solution for pawnshops and lending institutions.",
       features: [
-        "AI-powered asset valuation",
+        "AI powered asset valuation",
         "Digital inventory management",
         "Secure transaction processing",
         "Customer relationship management"
@@ -56,7 +56,7 @@ export default function TechnologyPage() {
     },
     {
       title: "Redstream",
-      description: "Professional-grade video streaming and monetization platform. Deliver high-quality content to global audiences with robust monetization tools.",
+      description: "Professional grade video streaming and monetization platform. Deliver high quality content to global audiences with robust monetization tools.",
       features: [
         "HD/4K video streaming infrastructure",
         "Multiple monetization models",
@@ -199,7 +199,7 @@ export default function TechnologyPage() {
             <p className={`text-xl max-w-3xl mx-auto ${
               isDark ? 'text-gray-300' : 'text-gray-600'
             }`}>
-              Cutting-edge solutions that power business transformation across industries
+              Cutting edge solutions that power business transformation across industries
             </p>
           </div>
 

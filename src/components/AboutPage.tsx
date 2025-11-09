@@ -169,7 +169,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div className={`w-full h-1 bg-[#8e5e42] rounded-full`}></div>
                 <p className={`text-lg leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                  To revolutionize the African technology and media landscape by delivering cutting-edge solutions 
+                  To revolutionize the African technology and media landscape by delivering cutting edge solutions 
                   that empower businesses, amplify voices, and drive digital transformation. We bridge the gap 
                   between innovation and impact, creating sustainable growth for our clients while fostering 
                   technological advancement across the continent.
@@ -190,7 +190,7 @@ export default function AboutPage() {
                 <p className={`text-lg leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
                   To be Africa's leading technology and media consulting firm, recognized globally for our innovation, 
                   creativity, and transformative impact. We envision a future where African businesses lead the 
-                  digital revolution, telling authentic stories and creating world-class solutions that inspire 
+                  digital revolution, telling authentic stories and creating world class solutions that inspire 
                   and connect communities worldwide.
                 </p>
               </div>

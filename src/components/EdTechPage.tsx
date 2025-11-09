@@ -16,7 +16,7 @@ export default function EdTechPage() {
       description: "Empowering innovation challenges & engagement. DHP is the ultimate platform for running hackathons, coding challenges, and innovation competitions that inspire creativity and drive results.",
       features: [
         "Seamless event management & judging tools",
-        "Real-time leaderboards & analytics",
+        "Real time leaderboards & analytics",
         "Mentorship matching & sponsor integration",
         "Perfect for universities, institutions, hubs, and corporate innovation teams"
       ],
@@ -33,7 +33,7 @@ export default function EdTechPage() {
       icon: BookOpen,
       description: "Reimagining how institutions celebrate achievements and memories. YBA transforms traditional yearbooks into dynamic digital experiences that last forever.",
       features: [
-        "Cloud-based, multimedia yearbook builder",
+        "Cloud based, multimedia yearbook builder",
         "Collaborative creation for students and staff",
         "Fully digital, sustainable, and globally accessible",
         "Interactive features and social sharing capabilities"
@@ -41,7 +41,7 @@ export default function EdTechPage() {
       stats: [
         { value: "100%", label: "Digital & Sustainable" },
         { value: "Global", label: "Accessible Anywhere" },
-        { value: "Forever", label: "Cloud-Based Storage" }
+        { value: "Forever", label: "Cloud Based Storage" }
       ],
       image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817"
     }
@@ -51,12 +51,12 @@ export default function EdTechPage() {
     {
       icon: Target,
       title: "Built for Education",
-      description: "Purpose-built for academic and training institutions"
+      description: "Purpose built for academic and training institutions"
     },
     {
       icon: Zap,
       title: "Easy to Implement",
-      description: "Cloud-based, scalable, and ready to deploy"
+      description: "Cloud based, scalable, and ready to deploy"
     },
     {
       icon: TrendingUp,

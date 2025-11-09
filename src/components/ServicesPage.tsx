@@ -103,7 +103,7 @@ export default function ServicesPage() {
     {
       id: "social",
       title: "Social Media Management",
-      description: "End-to-end social media management to build your online presence and engage with your community.",
+      description: "End to end social media management to build your online presence and engage with your community.",
       icon: Settings,
       color: "bg-[#8e5e42]"
     },

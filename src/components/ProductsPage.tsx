@@ -41,7 +41,7 @@ export default function ProductsPage() {
       title: "Dicey Tech Hackathon",
       subtitle: "Fostering Innovation Across Africa",
       description:
-        "Data & AI hackathons held in Nigeria, across Africa, and the UK — empowering the next generation of African tech innovators. These challenges are designed to harness local talent, solve real-world problems, and drive global impact through data science, artificial intelligence, and cutting-edge technology.",
+        "Data & AI hackathons held in Nigeria, across Africa, and the UK — empowering the next generation of African tech innovators. These challenges are designed to harness local talent, solve real world problems, and drive global impact through data science, artificial intelligence, and cutting edge technology.",
       target: "",
       status: "Impact: Prizes awarded, careers launched, communities built",
       image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.28.35.png?alt=media&token=1ce21401-4139-4163-baba-265f2ac843a9",
@@ -122,7 +122,7 @@ export default function ProductsPage() {
             <p className={`text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed ${
               isDark ? 'text-gray-300' : 'text-gray-600'
             }`}>
-              Cutting-edge solutions that shape the future of technology and digital experiences
+              Cutting edge solutions that shape the future of technology and digital experiences
             </p>
 
             {/* Floating Tech Elements */}
@@ -298,7 +298,7 @@ export default function ProductsPage() {
             <p className={`text-xl mb-8 max-w-2xl mx-auto ${
               isDark ? 'text-gray-300' : 'text-gray-600'
             }`}>
-              Join thousands of satisfied customers who have revolutionized their operations with our cutting-edge solutions.
+              Join thousands of satisfied customers who have revolutionized their operations with our cutting edge solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button

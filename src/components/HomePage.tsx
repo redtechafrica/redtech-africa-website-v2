@@ -154,7 +154,7 @@ export default function HomePage() {
                 Technology
               </h3>
               <p className={`text-center leading-relaxed ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                Enterprise-grade technology consulting
+                Enterprise grade technology consulting
               </p>
             </div>
           </div>

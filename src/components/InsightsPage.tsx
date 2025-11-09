@@ -99,12 +99,12 @@ export default function NewsPage() {
       icon: <Globe size={32} className="text-[#8e5e42]" />,
     },
     {
-      title: 'DeepSeek Shakes Up AI with Low-Cost Rival Model',
+      title: 'DeepSeek Shakes Up AI with Low Cost Rival Model',
       summary:
-        'Chinese startup DeepSeek launched a low-cost large language model that shot to the top of the App Store charts, spurring outages amid heavy demand.',
+        'Chinese startup DeepSeek launched a low cost large language model that shot to the top of the App Store charts, spurring outages amid heavy demand.',
       region: 'China/Asia',
       significance:
-        'DeepSeek\'s rise demonstrates China\'s growing edge in AI, challenging U.S. dominance—even amid export controls on high-powered chips.',
+        'DeepSeek\'s rise demonstrates China\'s growing edge in AI, challenging U.S. dominance—even amid export controls on high powered chips.',
       icon: <Rocket size={32} className="text-[#8e5e42]" />,
     },
     {
