@@ -23,7 +23,6 @@ export function Navigation() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/resourcing', label: 'Resourcing' },
-    { href: '/edtech', label: 'EdTech' },
     { href: '/technology', label: 'Technology' },
     { href: '/insights', label: 'Insights' },
     { href: '/contact', label: 'Contact' },
