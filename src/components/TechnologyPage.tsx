@@ -33,6 +33,32 @@ export default function TechnologyPage() {
 
   const products = [
     {
+      title: "Dicey Tech Hackathon",
+      subtitle: "Fostering Innovation Across Africa",
+      description: "Data & AI hackathons held in Nigeria, across Africa, and the UK — empowering the next generation of African tech innovators through data science and artificial intelligence.",
+      features: [
+        "Pan African hackathon events",
+        "Data science and AI challenges",
+        "Career launching opportunities",
+        "Community building initiatives"
+      ],
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.28.35.png?alt=media&token=1ce21401-4139-4163-baba-265f2ac843a9",
+      link: "https://diceytech.co.uk/"
+    },
+    {
+      title: "YearBook App (YBA)",
+      subtitle: "Revolutionizing Academic Memories",
+      description: "Transform traditional hardcover yearbooks into dynamic digital experiences. Captures student autobiographies, school activities, and institutional history in an interactive mobile platform.",
+      features: [
+        "Digital yearbook creation",
+        "Student autobiography profiles",
+        "School activity documentation",
+        "iOS and Android availability"
+      ],
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817",
+      link: "https://apps.apple.com/us/app/yearbook-academy/id6740851135"
+    },
+    {
       title: "Trade Credit Solution",
       subtitle: "AI Powered Credit Management",
       description: "AI powered credit management platform for financial institutions. Streamline lending operations with intelligent risk assessment and automated workflows.",
@@ -83,32 +109,6 @@ export default function TechnologyPage() {
       ],
       image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-30%20at%2011.25.02.png?alt=media&token=9150c0eb-0659-4bc1-b033-ca807430e96a",
       link: "https://trifusion-erpwxyv.rollout.site/#dashboard"
-    },
-    {
-      title: "Dicey Tech Hackathon",
-      subtitle: "Fostering Innovation Across Africa",
-      description: "Data & AI hackathons held in Nigeria, across Africa, and the UK — empowering the next generation of African tech innovators through data science and artificial intelligence.",
-      features: [
-        "Pan African hackathon events",
-        "Data science and AI challenges",
-        "Career launching opportunities",
-        "Community building initiatives"
-      ],
-      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.28.35.png?alt=media&token=1ce21401-4139-4163-baba-265f2ac843a9",
-      link: "https://diceytech.co.uk/"
-    },
-    {
-      title: "YearBook App (YBA)",
-      subtitle: "Revolutionizing Academic Memories",
-      description: "Transform traditional hardcover yearbooks into dynamic digital experiences. Captures student autobiographies, school activities, and institutional history in an interactive mobile platform.",
-      features: [
-        "Digital yearbook creation",
-        "Student autobiography profiles",
-        "School activity documentation",
-        "iOS and Android availability"
-      ],
-      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817",
-      link: "https://apps.apple.com/us/app/yearbook-academy/id6740851135"
     }
   ];
 
