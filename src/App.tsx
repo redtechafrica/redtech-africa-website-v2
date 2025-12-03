@@ -10,7 +10,6 @@ import { Footer } from "@/components/Footer";
 import Index from "./pages/Index";
 import AboutPage from "./components/AboutPage";
 import ResourcingPage from "./components/ResourcingPage";
-import EdTechPage from "./components/EdTechPage";
 import TechnologyPage from "./components/TechnologyPage";
 import ContactPage from "./components/ContactPage";
 import InsightsPage from "./components/InsightsPage";
@@ -33,7 +32,6 @@ const App = () => (
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<><AboutPage /><Footer /></>} />
               <Route path="/resourcing" element={<><ResourcingPage /><Footer /></>} />
-              <Route path="/edtech" element={<><EdTechPage /><Footer /></>} />
               <Route path="/technology" element={<><TechnologyPage /><Footer /></>} />
               <Route path="/insights" element={<><InsightsPage /><Footer /></>} />
               <Route path="/contact" element={<><ContactPage /><Footer /></>} />
