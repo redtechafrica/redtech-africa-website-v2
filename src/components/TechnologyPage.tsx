@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Code, Cloud, Brain, Cpu, Database, Shield, Zap, CheckCircle, ArrowRight, Layers } from 'lucide-react';
+import { Code, Cloud, Brain, Cpu, CheckCircle, ArrowRight, Layers } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '@/contexts/ThemeContext';
 
@@ -34,6 +34,7 @@ export default function TechnologyPage() {
   const products = [
     {
       title: "Trade Credit Solution",
+      subtitle: "AI Powered Credit Management",
       description: "AI powered credit management platform for financial institutions. Streamline lending operations with intelligent risk assessment and automated workflows.",
       features: [
         "Real time credit scoring and risk assessment",
@@ -41,10 +42,12 @@ export default function TechnologyPage() {
         "Portfolio management and monitoring",
         "Comprehensive reporting and analytics"
       ],
-      icon: Database
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817",
+      link: ""
     },
     {
       title: "Pawning App",
+      subtitle: "Digital Collateral Lending",
       description: "Digital platform for collateral based lending with automated valuation. Modern solution for pawnshops and lending institutions.",
       features: [
         "AI powered asset valuation",
@@ -52,10 +55,12 @@ export default function TechnologyPage() {
         "Secure transaction processing",
         "Customer relationship management"
       ],
-      icon: Shield
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817",
+      link: ""
     },
     {
-      title: "Redstream",
+      title: "REDstream",
+      subtitle: "African Stories, Global Audience",
       description: "Professional grade video streaming and monetization platform. Deliver high quality content to global audiences with robust monetization tools.",
       features: [
         "HD/4K video streaming infrastructure",
@@ -63,10 +68,12 @@ export default function TechnologyPage() {
         "Analytics and audience insights",
         "Content management system"
       ],
-      icon: Zap
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.34.48.jpg?alt=media&token=52f014fc-56fe-4369-8c4e-be58d1424a11",
+      link: "https://redstream-webapp-platform.vercel.app/"
     },
     {
-      title: "ERP Suite",
+      title: "REDtech ERP Suite",
+      subtitle: "Three in One Business Management",
       description: "Scalable enterprise management system integrating key business processes. Comprehensive solution for growing businesses.",
       features: [
         "Financial management and accounting",
@@ -74,9 +81,42 @@ export default function TechnologyPage() {
         "Inventory and supply chain management",
         "Sales and customer management"
       ],
-      icon: Layers
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-30%20at%2011.25.02.png?alt=media&token=9150c0eb-0659-4bc1-b033-ca807430e96a",
+      link: "https://trifusion-erpwxyv.rollout.site/#dashboard"
+    },
+    {
+      title: "Dicey Tech Hackathon",
+      subtitle: "Fostering Innovation Across Africa",
+      description: "Data & AI hackathons held in Nigeria, across Africa, and the UK — empowering the next generation of African tech innovators through data science and artificial intelligence.",
+      features: [
+        "Pan African hackathon events",
+        "Data science and AI challenges",
+        "Career launching opportunities",
+        "Community building initiatives"
+      ],
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2FScreenshot%202025-05-29%20at%2016.28.35.png?alt=media&token=1ce21401-4139-4163-baba-265f2ac843a9",
+      link: "https://diceytech.co.uk/"
+    },
+    {
+      title: "YearBook App (YBA)",
+      subtitle: "Revolutionizing Academic Memories",
+      description: "Transform traditional hardcover yearbooks into dynamic digital experiences. Captures student autobiographies, school activities, and institutional history in an interactive mobile platform.",
+      features: [
+        "Digital yearbook creation",
+        "Student autobiography profiles",
+        "School activity documentation",
+        "iOS and Android availability"
+      ],
+      image: "https://firebasestorage.googleapis.com/v0/b/icdatinnovation.appspot.com/o/redtech%20products%20branding%2F1.png?alt=media&token=3c56050e-817d-43f8-aa3b-1b93a33c5817",
+      link: "https://apps.apple.com/us/app/yearbook-academy/id6740851135"
     }
   ];
+
+  const handleProductClick = (link: string) => {
+    if (link) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -203,46 +243,70 @@ export default function TechnologyPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.map((product, index) => (
               <div
                 key={index}
                 data-animate
-                className={`backdrop-blur-sm rounded-3xl p-8 border transition-all duration-1000 transform hover:scale-105 ${
+                className={`group backdrop-blur-sm rounded-3xl overflow-hidden border transition-all duration-500 transform hover:scale-105 hover:shadow-2xl cursor-pointer ${
                   isVisible[3 + index] ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'
                 } ${
                   isDark 
-                    ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-[#8e5e42]/20'
-                    : 'bg-gradient-to-br from-white/80 to-[#8e5e42]/5 border-[#8e5e42]/20'
+                    ? 'bg-gradient-to-br from-gray-800/80 to-gray-900/80 border-[#8e5e42]/20 hover:border-[#8e5e42]/50'
+                    : 'bg-gradient-to-br from-white/80 to-[#8e5e42]/5 border-[#8e5e42]/20 hover:border-[#8e5e42]/50'
                 }`}
+                onClick={() => handleProductClick(product.link)}
               >
-                <div className="w-16 h-16 bg-[#8e5e42] rounded-xl flex items-center justify-center mb-6">
-                  <product.icon size={32} className="text-white" />
+                {/* Product Image */}
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                 </div>
                 
-                <h3 className={`text-2xl font-black mb-4 ${
-                  isDark ? 'text-white' : 'text-gray-900'
-                }`}>
-                  {product.title}
-                </h3>
-                
-                <p className={`text-lg mb-6 ${
-                  isDark ? 'text-gray-300' : 'text-gray-600'
-                }`}>
-                  {product.description}
-                </p>
+                <div className="p-6">
+                  <h3 className={`text-xl font-black mb-2 group-hover:text-[#8e5e42] transition-colors ${
+                    isDark ? 'text-white' : 'text-gray-900'
+                  }`}>
+                    {product.title}
+                  </h3>
+                  
+                  <p className={`text-sm font-semibold mb-3 ${
+                    isDark ? 'text-[#8e5e42]' : 'text-[#8e5e42]'
+                  }`}>
+                    {product.subtitle}
+                  </p>
+                  
+                  <p className={`text-sm mb-4 line-clamp-2 ${
+                    isDark ? 'text-gray-300' : 'text-gray-600'
+                  }`}>
+                    {product.description}
+                  </p>
 
-                <div className="space-y-3">
-                  {product.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-start gap-3">
-                      <CheckCircle size={20} className="text-[#8e5e42] flex-shrink-0 mt-1" />
-                      <span className={`text-sm ${
-                        isDark ? 'text-gray-400' : 'text-gray-600'
-                      }`}>
-                        {feature}
+                  <div className="space-y-2">
+                    {product.features.slice(0, 3).map((feature, idx) => (
+                      <div key={idx} className="flex items-start gap-2">
+                        <CheckCircle size={14} className="text-[#8e5e42] flex-shrink-0 mt-0.5" />
+                        <span className={`text-xs ${
+                          isDark ? 'text-gray-400' : 'text-gray-600'
+                        }`}>
+                          {feature}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                  
+                  {product.link && (
+                    <div className="mt-4 pt-4 border-t border-[#8e5e42]/20">
+                      <span className="text-sm font-semibold text-[#8e5e42] flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Visit Product
+                        <ArrowRight size={16} />
                       </span>
                     </div>
-                  ))}
+                  )}
                 </div>
               </div>
             ))}
